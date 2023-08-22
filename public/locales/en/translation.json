@@ -1,4 +1,8 @@
 {
     "Тестовый пример": "Test example",
-    "Язык": "English"
+    "Язык": "English",
+    "Переключить": "Toogle",
+    "Загрузка": "Loading....",
+    "О сайте": "About us",
+    "Главная": "Main page"
 }
