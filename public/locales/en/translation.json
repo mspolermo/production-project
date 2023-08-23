@@ -4,5 +4,8 @@
     "Переключить": "Toogle",
     "О сайте": "About us",
     "Главная": "Main page",
-    "Страница не найдена": "Page not found"
+    "Страница не найдена": "Page not found",
+    "Произошла непредвиденная ошибка": "An unexpected error has occurred",
+    "Обновить страницу": "Refresh the page",
+    "Проброс ошибки": "Throw error"
 }
