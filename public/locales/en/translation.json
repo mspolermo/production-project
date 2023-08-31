@@ -8,5 +8,7 @@
     "Произошла непредвиденная ошибка": "An unexpected error has occurred",
     "Обновить страницу": "Refresh the page",
     "Проброс ошибки": "Throw error",
-    "Войти": "Sign in"
+    "Войти": "Sign in",
+    "increment": "increment",
+    "decrement": "decrement"
 }
