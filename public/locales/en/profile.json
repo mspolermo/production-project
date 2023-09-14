@@ -8,5 +8,14 @@
     "Ваше имя": "Name",
     "Ваша фамилия": "Lastname",
     "Ваш возраст": "Age",
-    "Город": "City"
+    "Город": "City",
+    "Введите никнейм": "Enter your nickname",
+    "Введите ссылку на аватар": "Enter a link to your avatar",
+    "Укажите валюту": "Specify currency",
+    "Укажите страну": "Please indicate your country",
+    "Серверная ошибка при сохранении": "Server error when saving",
+    "Некорректный возраст": "Incorrect age",
+    "Некорректный регион": "Invalid region",
+    "Имя и фамилия обязательны": "First and last name are required",
+    "Данные не указаны": "Data not provided"
 }

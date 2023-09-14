@@ -20,7 +20,6 @@ export const Select = memo((props: SelectProps) => {
     const {
         className, label, options, value, onChange, readonly,
     } = props;
-    const mods: Mods = {};
 
     const onChangeHandler = (e: ChangeEvent<HTMLSelectElement>) => {
         onChange?.(e.target.value);
@@ -35,6 +34,10 @@ export const Select = memo((props: SelectProps) => {
             {opt.content}
         </option>
     )), [options]);
+
+    const mods: Mods = {
+        [cls.readonly]: readonly,
+    };
 
     return (
         <div className={classNames(cls.Wrapper, mods, [className])}>
