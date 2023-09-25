@@ -19,7 +19,9 @@
       "img": "https://teknotower.com/wp-content/uploads/2020/11/js.png",
       "views": 1022,
       "createdAt": "26.02.2022",
-      "type": ["IT"],
+      "type": [
+        "IT"
+      ],
       "blocks": [
         {
           "id": "1",
@@ -100,6 +102,30 @@
       "text": "some comment 3 che)",
       "articleId": "1",
       "userId": "1"
+    },
+    {
+      "articleId": "1",
+      "userId": "1",
+      "text": "asdfasdf",
+      "id": "iOVPY3N"
+    },
+    {
+      "articleId": "1",
+      "userId": "1",
+      "text": "asdfasdf",
+      "id": "092JHX3"
+    },
+    {
+      "articleId": "1",
+      "userId": "2",
+      "text": "статья огонь",
+      "id": "HPPM5vl"
+    },
+    {
+      "articleId": "1",
+      "userId": "2",
+      "text": "Хочу спать",
+      "id": "b81JM9D"
     }
   ],
   "users": [
@@ -118,14 +144,28 @@
       "avatar": "https://cdnstatic.rg.ru/crop1300x732/uploads/images/125/44/18/11111111.jpg"
     }
   ],
-  "profile": {
-    "first": "Александр",
-    "lastname": "Медведев",
-    "age": 29,
-    "city": "Полевской",
-    "username": "admin",
-    "avatar": "https://img2.reactor.cc/pics/post/full/Bebop-Bebop-and-Rocksteady-TMNT-%D1%84%D1%8D%D0%BD%D0%B4%D0%BE%D0%BC%D1%8B-5457666.jpeg",
-    "currency": "USD",
-    "country": "Ukraine"
-  }
+  "profile": [
+    {
+      "id": "1",
+      "first": "Александр",
+      "lastname": "Медведев",
+      "age": 29,
+      "city": "Екатеринбург",
+      "username": "admin",
+      "avatar": "https://img2.reactor.cc/pics/post/full/Bebop-Bebop-and-Rocksteady-TMNT-%D1%84%D1%8D%D0%BD%D0%B4%D0%BE%D0%BC%D1%8B-5457666.jpeg",
+      "currency": "RUB",
+      "country": "Russia"
+    },
+    {
+      "id": "2",
+      "first": "Женя",
+      "lastname": "Павлов",
+      "age": 30,
+      "city": "Полевской",
+      "username": "user",
+      "avatar": "https://cdnstatic.rg.ru/crop1300x732/uploads/images/125/44/18/11111111.jpg",
+      "currency": "USD",
+      "country": "Ukraine"
+    }
+  ]
 }
