@@ -3,18 +3,18 @@ import { classNames } from 'shared/lib/classNames/classNames';
 import { useTranslation } from 'react-i18next';
 import { Text } from 'shared/ui/Text/Text';
 import { ArticleTextBlock } from '../../model/types/article';
-import cls from './AricleTextBlockComponent.module.scss';
+import cls from './ArticleTextBlockComponent.module.scss';
 
-interface AricleTextBlockComponentProps {
+interface ArticleTextBlockComponentProps {
     className? : string;
     block: ArticleTextBlock;
 }
 
-export const AricleTextBlockComponent = memo((props: AricleTextBlockComponentProps) => {
+export const ArticleTextBlockComponent = memo((props: ArticleTextBlockComponentProps) => {
     const { t } = useTranslation();
     const { className, block } = props;
     return (
-        <div className={classNames(cls.AricleTextBlockComponent, {}, [className])}>
+        <div className={classNames(cls.ArticleTextBlockComponent, {}, [className])}>
             {block.title && (
                 <Text title={block.title} className={cls.title} />
             )}

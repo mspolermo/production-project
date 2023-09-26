@@ -20,7 +20,7 @@ import { articleDetailesReducer } from '../../model/slice/articleDetailsSlice';
 import cls from './ArticleDetails.module.scss';
 import { ArticleCodeBlockComponent } from '../ArticleCodeBlockComponent/ArticleCodeBlockComponent';
 import { ArticleImageBlockComponent } from '../ArticleImageBlockComponent/ArticleImageBlockComponent';
-import { AricleTextBlockComponent } from '../AricleTextBlockComponent/AricleTextBlockComponent';
+import { ArticleTextBlockComponent } from '../ArticleTextBlockComponent/ArticleTextBlockComponent';
 
 interface ArticleDetailsProps {
     className? : string;
@@ -58,7 +58,7 @@ export const ArticleDetails = memo(({ className, id }: ArticleDetailsProps) => {
             );
         case ArticleBlockType.TEXT:
             return (
-                <AricleTextBlockComponent
+                <ArticleTextBlockComponent
                     key={block.id}
                     className={cls.block}
                     block={block}
