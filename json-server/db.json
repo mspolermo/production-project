@@ -721,6 +721,12 @@
       "userId": "2",
       "text": "Хочу спать",
       "id": "b81JM9D"
+    },
+    {
+      "articleId": "1",
+      "userId": "1",
+      "text": "testing",
+      "id": "V7Trcoi"
     }
   ],
   "users": [
