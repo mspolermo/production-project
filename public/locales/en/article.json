@@ -3,5 +3,18 @@
     "Произошла ошибка при загрузке статьи": "Occurred due to an error including the article",
     "Комментарии": "Comments",
     "Читать далее": "Read more...",
-    "Назад к списку": "Back to list"
+    "Назад к списку": "Back to list",
+    "Поиск": "Search",
+    "Сортировать ПО": "Sort BY",
+    "по": "by",
+    "возрастанию": "ascending",
+    "убыванию": "descending",
+    "дате создания": "creation date",
+    "названию": "name",
+    "просмотрам": "views",
+    "Статьи не найдены" : "No articles found",
+    "Все статьи": "All articles",
+    "Айти": "IT",
+    "Экономика": "Economics",
+    "Наука": "Science"
 }
