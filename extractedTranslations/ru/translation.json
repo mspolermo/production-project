@@ -1,5 +1,10 @@
 {
   "": "",
+  "ARTICLE": "ARTICLE",
+  "ARTICLES ": "ARTICLES ",
+  "ARTICLES CRM": "ARTICLES CRM",
+  "FSD APP": "FSD APP",
+  "FSD App": "FSD App",
   "Lorem ipsum dolor sit amet, consectetur adipisicing elit": {
     " Aliquid commodi consequatur eligendi impedit incidunt necessitatibus possimus quis saepe sunt totam": {
       "": ""
@@ -62,10 +67,13 @@
     "": ""
   },
   "Профиль": "Профиль",
+  "Редактирование статьи с ID = ": "Редактирование статьи с ID = ",
   "Редактировать": "Редактировать",
   "Рек": "Рек",
   "Рекомендуем": "Рекомендуем",
   "Серверная ошибка при сохранении": "Серверная ошибка при сохранении",
+  "Создание новой статьи": "Создание новой статьи",
+  "Создать статью": "Создать статью",
   "Сортировать ПО": "Сортировать ПО",
   "Сохранить": "Сохранить",
   "Статьи не найдены": "Статьи не найдены",
