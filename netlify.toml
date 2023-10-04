@@ -1,5 +1,3 @@
-[build]
-    command = "npm install && npm run build:prod"
 [[redirects]]
     from = "/*"
     to = "/index.html"
