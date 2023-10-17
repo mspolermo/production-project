@@ -30,7 +30,15 @@ module.exports = {
         'i18next/no-literal-string': ['error',
             {
                 markupOnly: true,
-                ignoreAttribute: ['data-testid', 'to', 'target'],
+                ignoreAttribute: [
+                    'data-testid',
+                    'to',
+                    'target',
+                    'justify',
+                    'align',
+                    'gap',
+                    'direction',
+                ],
             },
         ],
         'react/jsx-indent': [2, 4],
