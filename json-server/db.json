@@ -631,6 +631,12 @@
       "userId": "1",
       "text": "xcsd",
       "id": "fQUa4AF"
+    },
+    {
+      "articleId": "11",
+      "userId": "1",
+      "text": "sdasda",
+      "id": "nDCMZUQ"
     }
   ],
   "users": [
@@ -652,14 +658,14 @@
   "profile": [
     {
       "id": "1",
-      "first": "Александр",
+      "first": "Алекс",
       "lastname": "Медведев",
       "age": 29,
       "city": "Екатеринбург",
       "username": "admin",
       "avatar": "https://img2.reactor.cc/pics/post/full/Bebop-Bebop-and-Rocksteady-TMNT-%D1%84%D1%8D%D0%BD%D0%B4%D0%BE%D0%BC%D1%8B-5457666.jpeg",
-      "currency": "RUB",
-      "country": "Russia"
+      "currency": "EUR",
+      "country": "Belarus"
     },
     {
       "id": "2",
