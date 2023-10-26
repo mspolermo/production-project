@@ -11,7 +11,8 @@ import CalendarIcon from 'shared/assets/icons/calendar-20-20.svg';
 import { Icon } from 'shared/ui/Icon/Icon';
 import { HStack, VStack } from 'shared/ui/Stack';
 import { Avatar } from '../../../../shared/ui/Avatar/Avatar';
-import { ArticleBlock, ArticleBlockType } from '../../model/types/article';
+import { ArticleBlock } from '../../model/types/article';
+import { ArticleBlockType } from '../../model/consts/articleConsts';
 import {
     getArticleDetailsData, getArticleDetailsError, getArticleDetailsIsLoading,
 } from '../../model/selectors/articleDetails';
