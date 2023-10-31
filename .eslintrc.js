@@ -36,6 +36,7 @@ module.exports = {
                     'target',
                     'justify',
                     'align',
+                    'border',
                     'gap',
                     'direction',
                     'role',
