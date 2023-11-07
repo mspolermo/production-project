@@ -738,5 +738,70 @@
       "currency": "USD",
       "country": "Ukraine"
     }
+  ],
+  "article-ratings": [
+    {
+      "id": "1",
+      "rate": 4,
+      "feedback": "Хорошая статья",
+      "userId": "1",
+      "articleId": "1"
+    },
+    {
+      "id": "2",
+      "rate": 3,
+      "feedback": "Хорошая статья",
+      "userId": "2",
+      "articleId": "2"
+    },
+    {
+      "userId": "1",
+      "articleId": "3",
+      "rate": 2,
+      "feedback": "",
+      "id": "EkLjanG"
+    },
+    {
+      "userId": "1",
+      "articleId": "9",
+      "rate": 5,
+      "feedback": "asdasdfads",
+      "id": "O9qmZzy"
+    },
+    {
+      "userId": "1",
+      "articleId": "11",
+      "rate": 4,
+      "feedback": "sdf",
+      "id": "NqXlVx6"
+    },
+    {
+      "userId": "1",
+      "articleId": "12",
+      "rate": 2,
+      "id": "SjYZVqv"
+    },
+    {
+      "userId": "1",
+      "articleId": "13",
+      "rate": 2,
+      "id": "PdtORK6"
+    }
+  ],
+  "profile-ratings": [
+    {
+      "id": "1",
+      "rate": 4,
+      "feedback": "Хороший профиль",
+      "userId": "1",
+      "profileId": "1"
+    },
+    {
+      "id": "2",
+      "rate": 4,
+      "feedback": "Хороший чел",
+      "userId": "1",
+      "profileId": "2"
+    }
   ]
 }

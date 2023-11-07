@@ -21,5 +21,7 @@
     "Редактирование статьи с ID = ": "Editing an article with an ID = ",
     "Создание новой статьи": "Creating a new article",
     "Редактировать": "Edit",
-    "Ошибка при загрузке статей": "Error loading articles"
+    "Ошибка при загрузке статей": "Error loading articles",
+    "Оцените статью": "Rate this article",
+    "Оставьте свой отзыв о статье, это поможет улучшить качество": "Leave your feedback on the article, this will help improve the quality"
 }
