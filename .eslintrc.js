@@ -68,7 +68,7 @@ module.exports = {
         'no-undef': 'off',
         'react/no-array-index-key': 'off',
         'arrow-body-style': 'off',
-        'mspolermo-plugin/path-checker': ['error', {alias: '@'}],
+        'mspolermo-plugin/path-checker': ['error', { alias: '@' }],
     },
     globals: {
         __IS_DEV__: true,
