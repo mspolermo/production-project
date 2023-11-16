@@ -23,10 +23,12 @@ module.exports = {
         'i18next',
         'react-hooks',
         'mspolermo-plugin',
+        'unused-imports',
     ],
     rules: {
         'react-hooks/rules-of-hooks': 'error',
         'react-hooks/exhaustive-deps': 'error',
+        'unused-imports/no-unused-imports': 'error',
         'i18next/no-literal-string': ['error',
             {
                 markupOnly: true,
