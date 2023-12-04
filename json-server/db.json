@@ -719,6 +719,15 @@
         "MANAGER"
       ],
       "avatar": "https://cdnstatic.rg.ru/crop1300x732/uploads/images/125/44/18/11111111.jpg"
+    },
+    {
+      "id": "4",
+      "username": "testuser",
+      "password": "123",
+      "roles": [
+        "ADMIN"
+      ],
+      "avatar": "https://cdnstatic.rg.ru/crop1300x732/uploads/images/125/44/18/11111111.jpg"
     }
   ],
   "profile": [
