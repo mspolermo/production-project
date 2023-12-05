@@ -45,7 +45,10 @@ export const ArticleListItem = memo((props: ArticleListItemProps) => {
         ) as ArticleTextBlock;
 
         return (
-            <div className={classNames(cls.ArticleListItem, {}, [className, cls[view]])}>
+            <div
+                data-testid="ArticleListItem"
+                className={classNames(cls.ArticleListItem, {}, [className, cls[view]])}
+            >
                 <Card className={cls.card}>
                     <div className={cls.header}>
                         <Avatar size={30} src={article.user.avatar} />
@@ -77,25 +80,28 @@ export const ArticleListItem = memo((props: ArticleListItemProps) => {
     }
 
     return (
-        <div className={classNames(cls.ArticleListItem, {}, [className, cls[view]])}>
-            <AppLink to={getRouteArticleDetails(article.id)} target={target}>
-                <Card className={cls.card}>
-                    <div className={cls.imageWrapper}>
-                        <AppImage
-                            fallback={<Skeleton width={200} height={200} />}
-                            alt={article.title}
-                            src={article.img}
-                            className={cls.img}
-                        />
-                        <Text text={article.createdAt} className={cls.date} />
-                    </div>
-                    <div className={cls.infoWrapper}>
-                        {types}
-                        {views}
-                    </div>
-                    <Text text={article.title} className={cls.title} />
-                </Card>
-            </AppLink>
-        </div>
+        <AppLink
+            data-testid="ArticleListItem"
+            to={getRouteArticleDetails(article.id)}
+            target={target}
+            className={classNames(cls.ArticleListItem, {}, [className, cls[view]])}
+        >
+            <Card className={cls.card}>
+                <div className={cls.imageWrapper}>
+                    <AppImage
+                        fallback={<Skeleton width={200} height={200} />}
+                        alt={article.title}
+                        src={article.img}
+                        className={cls.img}
+                    />
+                    <Text text={article.createdAt} className={cls.date} />
+                </div>
+                <div className={cls.infoWrapper}>
+                    {types}
+                    {views}
+                </div>
+                <Text text={article.title} className={cls.title} />
+            </Card>
+        </AppLink>
     );
 });

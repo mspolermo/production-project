@@ -592,6 +592,84 @@
           ]
         }
       ]
+    },
+    {
+      "title": "Экономическая статья - ИНФЛЯЦИЯ!",
+      "subtitle": "ECONOMICS",
+      "img": "https://www.mirea.ru/upload/iblock/7cf/vvp_rf2018_1.jpg",
+      "views": 1022,
+      "createdAt": "26.02.2022",
+      "userId": "1",
+      "type": [
+        "ECONOMICS"
+      ],
+      "blocks": [],
+      "id": "DmQy0C8"
+    },
+    {
+      "title": "Экономическая статья - ИНФЛЯЦИЯ!",
+      "subtitle": "ECONOMICS",
+      "img": "https://www.mirea.ru/upload/iblock/7cf/vvp_rf2018_1.jpg",
+      "views": 1022,
+      "createdAt": "26.02.2022",
+      "userId": "1",
+      "type": [
+        "ECONOMICS"
+      ],
+      "blocks": [],
+      "id": "te0eJvT"
+    },
+    {
+      "title": "Экономическая статья - ИНФЛЯЦИЯ!",
+      "subtitle": "ECONOMICS",
+      "img": "https://www.mirea.ru/upload/iblock/7cf/vvp_rf2018_1.jpg",
+      "views": 1022,
+      "createdAt": "26.02.2022",
+      "userId": "1",
+      "type": [
+        "ECONOMICS"
+      ],
+      "blocks": [],
+      "id": "sZdx5no"
+    },
+    {
+      "title": "Экономическая статья - ИНФЛЯЦИЯ!",
+      "subtitle": "ECONOMICS",
+      "img": "https://www.mirea.ru/upload/iblock/7cf/vvp_rf2018_1.jpg",
+      "views": 1022,
+      "createdAt": "26.02.2022",
+      "userId": "1",
+      "type": [
+        "ECONOMICS"
+      ],
+      "blocks": [],
+      "id": "IhigaA2"
+    },
+    {
+      "title": "Экономическая статья - ИНФЛЯЦИЯ!",
+      "subtitle": "ECONOMICS",
+      "img": "https://www.mirea.ru/upload/iblock/7cf/vvp_rf2018_1.jpg",
+      "views": 1022,
+      "createdAt": "26.02.2022",
+      "userId": "1",
+      "type": [
+        "ECONOMICS"
+      ],
+      "blocks": [],
+      "id": "nOKBXtV"
+    },
+    {
+      "title": "Экономическая статья - ИНФЛЯЦИЯ!",
+      "subtitle": "ECONOMICS",
+      "img": "https://www.mirea.ru/upload/iblock/7cf/vvp_rf2018_1.jpg",
+      "views": 1022,
+      "createdAt": "26.02.2022",
+      "userId": "1",
+      "type": [
+        "ECONOMICS"
+      ],
+      "blocks": [],
+      "id": "sXJQwaT"
     }
   ],
   "comments": [
@@ -749,6 +827,17 @@
       "age": 30,
       "city": "Полевской",
       "username": "user",
+      "avatar": "https://cdnstatic.rg.ru/crop1300x732/uploads/images/125/44/18/11111111.jpg",
+      "currency": "USD",
+      "country": "Ukraine"
+    },
+    {
+      "id": "4",
+      "first": "Test",
+      "lastname": "User",
+      "age": 30,
+      "city": "Полевской",
+      "username": "testuser",
       "avatar": "https://cdnstatic.rg.ru/crop1300x732/uploads/images/125/44/18/11111111.jpg",
       "currency": "USD",
       "country": "Ukraine"
