@@ -592,6 +592,175 @@
           ]
         }
       ]
+    },
+    {
+      "title": "TESTING ARTICLE",
+      "subtitle": "ECONOMICS",
+      "img": "https://www.mirea.ru/upload/iblock/7cf/vvp_rf2018_1.jpg",
+      "views": 1022,
+      "createdAt": "26.02.2022",
+      "userId": "1",
+      "type": [
+        "ECONOMICS"
+      ],
+      "blocks": [],
+      "id": "qEqY49B"
+    },
+    {
+      "title": "TESTING ARTICLE",
+      "subtitle": "ECONOMICS",
+      "img": "https://www.mirea.ru/upload/iblock/7cf/vvp_rf2018_1.jpg",
+      "views": 1022,
+      "createdAt": "26.02.2022",
+      "userId": "1",
+      "type": [
+        "ECONOMICS"
+      ],
+      "blocks": [],
+      "id": "jiQ9IAk"
+    },
+    {
+      "title": "TESTING ARTICLE",
+      "subtitle": "ECONOMICS",
+      "img": "https://www.mirea.ru/upload/iblock/7cf/vvp_rf2018_1.jpg",
+      "views": 1022,
+      "createdAt": "26.02.2022",
+      "userId": "1",
+      "type": [
+        "ECONOMICS"
+      ],
+      "blocks": [],
+      "id": "Nl7adHw"
+    },
+    {
+      "title": "TESTING ARTICLE",
+      "subtitle": "ECONOMICS",
+      "img": "https://www.mirea.ru/upload/iblock/7cf/vvp_rf2018_1.jpg",
+      "views": 1022,
+      "createdAt": "26.02.2022",
+      "userId": "1",
+      "type": [
+        "ECONOMICS"
+      ],
+      "blocks": [],
+      "id": "t4XvzOL"
+    },
+    {
+      "title": "TESTING ARTICLE",
+      "subtitle": "ECONOMICS",
+      "img": "https://www.mirea.ru/upload/iblock/7cf/vvp_rf2018_1.jpg",
+      "views": 1022,
+      "createdAt": "26.02.2022",
+      "userId": "1",
+      "type": [
+        "ECONOMICS"
+      ],
+      "blocks": [],
+      "id": "cWAkq75"
+    },
+    {
+      "title": "TESTING ARTICLE",
+      "subtitle": "ECONOMICS",
+      "img": "https://www.mirea.ru/upload/iblock/7cf/vvp_rf2018_1.jpg",
+      "views": 1022,
+      "createdAt": "26.02.2022",
+      "userId": "1",
+      "type": [
+        "ECONOMICS"
+      ],
+      "blocks": [],
+      "id": "Z98p9MO"
+    },
+    {
+      "title": "TESTING ARTICLE",
+      "subtitle": "ECONOMICS",
+      "img": "https://www.mirea.ru/upload/iblock/7cf/vvp_rf2018_1.jpg",
+      "views": 1022,
+      "createdAt": "26.02.2022",
+      "userId": "1",
+      "type": [
+        "ECONOMICS"
+      ],
+      "blocks": [],
+      "id": "wdsebIf"
+    },
+    {
+      "title": "TESTING ARTICLE",
+      "subtitle": "ECONOMICS",
+      "img": "https://www.mirea.ru/upload/iblock/7cf/vvp_rf2018_1.jpg",
+      "views": 1022,
+      "createdAt": "26.02.2022",
+      "userId": "1",
+      "type": [
+        "ECONOMICS"
+      ],
+      "blocks": [],
+      "id": "NJpdl0x"
+    },
+    {
+      "title": "TESTING ARTICLE",
+      "subtitle": "ECONOMICS",
+      "img": "https://www.mirea.ru/upload/iblock/7cf/vvp_rf2018_1.jpg",
+      "views": 1022,
+      "createdAt": "26.02.2022",
+      "userId": "1",
+      "type": [
+        "ECONOMICS"
+      ],
+      "blocks": [],
+      "id": "ZXYilIs"
+    },
+    {
+      "title": "TESTING ARTICLE",
+      "subtitle": "ECONOMICS",
+      "img": "https://www.mirea.ru/upload/iblock/7cf/vvp_rf2018_1.jpg",
+      "views": 1022,
+      "createdAt": "26.02.2022",
+      "userId": "1",
+      "type": [
+        "ECONOMICS"
+      ],
+      "blocks": [],
+      "id": "BeoM-or"
+    },
+    {
+      "title": "TESTING ARTICLE",
+      "subtitle": "ECONOMICS",
+      "img": "https://www.mirea.ru/upload/iblock/7cf/vvp_rf2018_1.jpg",
+      "views": 1022,
+      "createdAt": "26.02.2022",
+      "userId": "1",
+      "type": [
+        "ECONOMICS"
+      ],
+      "blocks": [],
+      "id": "B-Meuxi"
+    },
+    {
+      "title": "TESTING ARTICLE",
+      "subtitle": "ECONOMICS",
+      "img": "https://www.mirea.ru/upload/iblock/7cf/vvp_rf2018_1.jpg",
+      "views": 1022,
+      "createdAt": "26.02.2022",
+      "userId": "1",
+      "type": [
+        "ECONOMICS"
+      ],
+      "blocks": [],
+      "id": "e6qvhyr"
+    },
+    {
+      "title": "TESTING ARTICLE",
+      "subtitle": "ECONOMICS",
+      "img": "https://www.mirea.ru/upload/iblock/7cf/vvp_rf2018_1.jpg",
+      "views": 1022,
+      "createdAt": "26.02.2022",
+      "userId": "1",
+      "type": [
+        "ECONOMICS"
+      ],
+      "blocks": [],
+      "id": "lFPxnKE"
     }
   ],
   "comments": [
@@ -812,6 +981,13 @@
       "articleId": "13",
       "rate": 2,
       "id": "PdtORK6"
+    },
+    {
+      "userId": "4",
+      "articleId": "cWAkq75",
+      "rate": 5,
+      "feedback": "feedback",
+      "id": "em0AMYR"
     }
   ],
   "profile-ratings": [

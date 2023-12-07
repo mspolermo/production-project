@@ -8,4 +8,12 @@ describe('Юзер заходит на страницу со списком ст
         cy.getByTestId('ArticleList').should('exist');
         cy.getByTestId('ArticleListItem').should('have.length.greaterThan', 3);
     });
+    it.skip('Пример скипа теста', () => {
+        cy.get('asdasdasdasdasdasdasdasd').should('exist');
+    });
+    it('На стабах (фикстурах)', () => {
+        cy.intercept('GET', '**/articles?*', { fixture: 'articles.json' });
+        cy.getByTestId('ArticleList').should('exist');
+        cy.getByTestId('ArticleListItem').should('have.length.greaterThan', 3);
+    });
 });
