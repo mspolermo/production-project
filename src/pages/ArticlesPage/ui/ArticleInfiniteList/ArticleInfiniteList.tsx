@@ -5,11 +5,13 @@ import { ArticleList } from '@/entities/Article';
 import { Text } from '@/shared/ui/Text';
 import { getArticles } from '../../model/slices/articlesPageSlice';
 import {
-    getArticlesPageError, getArticlesPageIsLoading, getArticlesPageView,
+    getArticlesPageError,
+    getArticlesPageIsLoading,
+    getArticlesPageView,
 } from '../../model/selectors/articlesPageSelector';
 
 interface ArticleInfiniteListProps {
-    className? : string;
+    className?: string;
 }
 
 export const ArticleInfiniteList = memo((props: ArticleInfiniteListProps) => {

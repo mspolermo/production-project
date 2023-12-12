@@ -12,7 +12,9 @@ export default {
     },
 } as ComponentMeta<typeof ArticleList>;
 
-const Template: ComponentStory<typeof ArticleList> = (args) => <ArticleList {...args} />;
+const Template: ComponentStory<typeof ArticleList> = (args) => (
+    <ArticleList {...args} />
+);
 
 const article = {
     id: '1',
@@ -26,9 +28,7 @@ const article = {
         username: 'admin',
         avatar: 'https://img2.reactor.cc/pics/post/full/Bebop-Bebop-and-Rocksteady-TMNT-%D1%84%D1%8D%D0%BD%D0%B4%D0%BE%D0%BC%D1%8B-5457666.jpeg',
     },
-    type: [
-        'IT',
-    ],
+    type: ['IT'],
     blocks: [
         {
             id: '1',
@@ -108,7 +108,8 @@ LoadingSmall.args = {
 export const ListSmall = Template.bind({});
 ListSmall.args = {
     articles: new Array(9).fill(0).map((item, index) => ({
-        ...article, id: String(index),
+        ...article,
+        id: String(index),
     })),
     view: ArticleView.SMALL,
 };
@@ -116,7 +117,8 @@ ListSmall.args = {
 export const ListBig = Template.bind({});
 ListBig.args = {
     articles: new Array(3).fill(0).map((item, index) => ({
-        ...article, id: String(index),
+        ...article,
+        id: String(index),
     })),
     view: ArticleView.BIG,
 };

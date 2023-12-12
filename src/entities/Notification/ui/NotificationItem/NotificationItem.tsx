@@ -6,7 +6,7 @@ import cls from './NotificationItem.module.scss';
 import { Notification } from '../../model/types/notification';
 
 interface NotificationItemProps {
-    className? : string;
+    className?: string;
     item: Notification;
 }
 

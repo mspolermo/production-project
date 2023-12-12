@@ -4,7 +4,13 @@ module.exports = {
         es2021: true,
         jest: true,
     },
-    extends: ['plugin:react/recommended', 'airbnb', 'plugin:i18next/recommended', 'plugin:storybook/recommended'],
+    extends: [
+        'plugin:react/recommended',
+        'airbnb',
+        'plugin:i18next/recommended',
+        'plugin:storybook/recommended',
+        'prettier',
+    ],
     parser: '@typescript-eslint/parser',
     parserOptions: {
         ecmaFeatures: {
@@ -22,9 +28,6 @@ module.exports = {
             markupOnly: true,
             ignoreAttribute: ['data-testid', 'to', 'target', 'justify', 'align', 'border', 'gap', 'direction', 'role', 'as'],
         }],
-        'react/jsx-indent': [2, 4],
-        'react/jsx-indent-props': [2, 4],
-        indent: [2, 4],
         'react/jsx-filename-extension': [2, {
             extensions: ['.js', '.jsx', '.tsx'],
         }],
@@ -49,6 +52,7 @@ module.exports = {
         'no-undef': 'off',
         'react/no-array-index-key': 'off',
         'arrow-body-style': 'off',
+        'react/jsx-max-props-per-line': ['error', { maximum: 4 }],
         // 'mspolermo-plugin/path-checker': ['error', {
         //     alias: '@',
         // }],

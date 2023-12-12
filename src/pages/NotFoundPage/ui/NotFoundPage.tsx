@@ -5,7 +5,7 @@ import { Page } from '@/widgets/Page';
 import cls from './NotFoundPage.module.scss';
 
 interface NotFoundPageProps {
-    className? : string;
+    className?: string;
 }
 
 export const NotFoundPage = ({ className }: NotFoundPageProps) => {
@@ -16,7 +16,7 @@ export const NotFoundPage = ({ className }: NotFoundPageProps) => {
             data-testid="NotFoundPage"
             className={classNames(cls.NotFoundPage, {}, [className])}
         >
-            { t('Страница не найдена') }
+            {t('Страница не найдена')}
         </Page>
     );
 };

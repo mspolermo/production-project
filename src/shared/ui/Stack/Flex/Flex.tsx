@@ -25,20 +25,23 @@ const directionClasses: Record<FlexDirection, string> = {
     column: cls.directionColumn,
 };
 
-const gapClasses : Record<FlexGap, string> = {
+const gapClasses: Record<FlexGap, string> = {
     4: cls.gap4,
     8: cls.gap8,
     16: cls.gap16,
     32: cls.gap32,
 };
 
-type DivProps = DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>;
+type DivProps = DetailedHTMLProps<
+    HTMLAttributes<HTMLDivElement>,
+    HTMLDivElement
+>;
 
 export interface FlexProps extends DivProps {
-    className? : string;
+    className?: string;
     children: ReactNode;
-    justify? : FlexJustify;
-    align? : FlexAlign;
+    justify?: FlexJustify;
+    align?: FlexAlign;
     gap?: FlexGap;
     direction: FlexDirection;
     max?: boolean;
@@ -46,7 +49,14 @@ export interface FlexProps extends DivProps {
 
 export const Flex = (props: FlexProps) => {
     const {
-        className, children, justify = 'start', align = 'center', direction = 'row', gap, max, ...otherProps
+        className,
+        children,
+        justify = 'start',
+        align = 'center',
+        direction = 'row',
+        gap,
+        max,
+        ...otherProps
     } = props;
 
     const classes = [

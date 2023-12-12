@@ -6,7 +6,7 @@ import { Loader } from '@/shared/ui/Loader';
 import { LoginFormAsync } from '../LoginForm/LoginForm.async';
 
 interface LoginModalProps {
-    className? : string;
+    className?: string;
     isOpen: boolean;
     onClose: () => void;
 }

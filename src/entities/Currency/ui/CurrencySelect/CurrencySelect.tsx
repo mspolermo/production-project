@@ -4,7 +4,7 @@ import { ListBox } from '@/shared/ui/Popups';
 import { Currency } from '../../model/types/currency';
 
 interface CurrencySelectProps {
-    className? : string;
+    className?: string;
     value?: Currency;
     onChange?: (value: Currency) => void;
     readonly?: boolean;
@@ -15,23 +15,26 @@ const options = [
     { value: Currency.USD, content: Currency.USD },
 ];
 
-export const CurrencySelect = memo(({
-    className, value, onChange, readonly,
-}: CurrencySelectProps) => {
-    const { t } = useTranslation('profile');
-    const onChangeHandler = useCallback((value: string) => {
-        onChange?.(value as Currency);
-    }, [onChange]);
+export const CurrencySelect = memo(
+    ({ className, value, onChange, readonly }: CurrencySelectProps) => {
+        const { t } = useTranslation('profile');
+        const onChangeHandler = useCallback(
+            (value: string) => {
+                onChange?.(value as Currency);
+            },
+            [onChange],
+        );
 
-    return (
-        <ListBox
-            className={className}
-            readonly={readonly}
-            value={value}
-            defaultValue={t('Укажите валюту')}
-            label={t('Укажите валюту')}
-            items={options}
-            onChange={onChangeHandler}
-        />
-    );
-});
+        return (
+            <ListBox
+                className={className}
+                readonly={readonly}
+                value={value}
+                defaultValue={t('Укажите валюту')}
+                label={t('Укажите валюту')}
+                items={options}
+                onChange={onChangeHandler}
+            />
+        );
+    },
+);
