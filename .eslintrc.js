@@ -53,9 +53,9 @@ module.exports = {
         'react/no-array-index-key': 'off',
         'arrow-body-style': 'off',
         'react/jsx-max-props-per-line': ['error', { maximum: 4 }],
-        // 'mspolermo-plugin/path-checker': ['error', {
-        //     alias: '@',
-        // }],
+        'mspolermo-plugin/path-checker': ['error', {
+             alias: '@',
+        }],
         // 'mspolermo-plugin/public-api-imports': ['error', {
         //     alias: '@',
         //     testFilesPatterns: ['**/*.test.*', '**/*.story.*', '**/StoreDecorator.tsx'],
