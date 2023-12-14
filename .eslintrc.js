@@ -54,12 +54,12 @@ module.exports = {
         'arrow-body-style': 'off',
         'react/jsx-max-props-per-line': ['error', { maximum: 4 }],
         'mspolermo-plugin/path-checker': ['error', {
-             alias: '@',
+            alias: '@',
         }],
-        // 'mspolermo-plugin/public-api-imports': ['error', {
-        //     alias: '@',
-        //     testFilesPatterns: ['**/*.test.*', '**/*.story.*', '**/StoreDecorator.tsx'],
-        // }],
+        'mspolermo-plugin/public-api-imports': ['error', {
+            alias: '@',
+            testFilesPatterns: ['**/*.test.*', '**/*.story.*', '**/StoreDecorator.tsx'],
+        }],
         // 'mspolermo-plugin/layer-imports': ['error', {
         //     alias: '@',
         //     ignoreImportPatterns: ['**/StoreProvider', '**/testing'],
