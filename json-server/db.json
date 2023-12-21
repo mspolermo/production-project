@@ -807,6 +807,11 @@
                 "isArticleRatingEnabled": true,
                 "isCounterEnabled": true
             },
+            "jsonSettings": {
+                "theme": "app_dark_theme",
+                "isFirstVisit": true,
+                "settingsPageHasBeenOpen": false
+            },
             "avatar": "https://img2.reactor.cc/pics/post/full/Bebop-Bebop-and-Rocksteady-TMNT-%D1%84%D1%8D%D0%BD%D0%B4%D0%BE%D0%BC%D1%8B-5457666.jpeg"
         },
         {
@@ -817,6 +822,11 @@
             "features": {
                 "isArticleRatingEnabled": false,
                 "isCounterEnabled": false
+            },
+            "jsonSettings": {
+                "theme": "app_dark_theme",
+                "isFirstVisit": true,
+                "settingsPageHasBeenOpen": false
             },
             "avatar": "https://cdnstatic.rg.ru/crop1300x732/uploads/images/125/44/18/11111111.jpg"
         },
@@ -829,6 +839,11 @@
                 "isArticleRatingEnabled": true,
                 "isCounterEnabled": false
             },
+            "jsonSettings": {
+                "theme": "app_dark_theme",
+                "isFirstVisit": true,
+                "settingsPageHasBeenOpen": false
+            },
             "avatar": "https://cdnstatic.rg.ru/crop1300x732/uploads/images/125/44/18/11111111.jpg"
         },
         {
@@ -839,6 +854,11 @@
             "features": {
                 "isArticleRatingEnabled": false,
                 "isCounterEnabled": true
+            },
+            "jsonSettings": {
+                "theme": "app_dark_theme",
+                "isFirstVisit": true,
+                "settingsPageHasBeenOpen": false
             },
             "avatar": "https://cdnstatic.rg.ru/crop1300x732/uploads/images/125/44/18/11111111.jpg"
         }

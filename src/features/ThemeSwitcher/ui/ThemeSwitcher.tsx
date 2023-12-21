@@ -1,4 +1,4 @@
-import React, { memo } from 'react';
+import React, { memo, useCallback } from 'react';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { Theme } from '@/shared/const/theme';
 import LightIcon from '@/shared/assets/icons/theme-light.svg';
@@ -13,11 +13,18 @@ interface ThemeSwitcherProps {
 export const ThemeSwitcher = memo(({ className }: ThemeSwitcherProps) => {
     const { theme, toogleTheme } = useTheme();
 
+    const onToogleHandler = useCallback(() => {
+        toogleTheme((newTheme) => {
+            console.log(`Тема сменилась на ${newTheme}`);
+            // saveJsonSettings(newTheme)
+        });
+    }, [toogleTheme]);
+
     return (
         <Button
             theme={ButtonTheme.CLEAR}
             className={classNames('', {}, [className])}
-            onClick={toogleTheme}
+            onClick={onToogleHandler}
         >
             {theme === Theme.DARK ? <DarkIcon /> : <LightIcon />}
         </Button>
