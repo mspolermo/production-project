@@ -810,7 +810,8 @@
             "jsonSettings": {
                 "theme": "app_orange_theme",
                 "isFirstVisit": true,
-                "settingsPageHasBeenOpen": false
+                "settingsPageHasBeenOpen": false,
+                "isArticlePageWasOpened": true
             },
             "avatar": "https://img2.reactor.cc/pics/post/full/Bebop-Bebop-and-Rocksteady-TMNT-%D1%84%D1%8D%D0%BD%D0%B4%D0%BE%D0%BC%D1%8B-5457666.jpeg"
         },
@@ -826,7 +827,8 @@
             "jsonSettings": {
                 "theme": "app_dark_theme",
                 "isFirstVisit": true,
-                "settingsPageHasBeenOpen": false
+                "settingsPageHasBeenOpen": false,
+                "isArticlePageWasOpened": true
             },
             "avatar": "https://cdnstatic.rg.ru/crop1300x732/uploads/images/125/44/18/11111111.jpg"
         },
