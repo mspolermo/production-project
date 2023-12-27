@@ -26,7 +26,19 @@ module.exports = {
         'unused-imports/no-unused-imports': 'error',
         'i18next/no-literal-string': ['error', {
             markupOnly: true,
-            ignoreAttribute: ['data-testid', 'to', 'target', 'justify', 'align', 'border', 'gap', 'direction', 'role', 'as'],
+            ignoreAttribute: [
+                'data-testid',
+                'to',
+                'target',
+                'justify',
+                'align',
+                'border',
+                'gap',
+                'direction',
+                'role',
+                'as',
+                'feature'
+            ],
         }],
         'react/jsx-filename-extension': [2, {
             extensions: ['.js', '.jsx', '.tsx'],
