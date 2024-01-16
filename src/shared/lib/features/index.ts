@@ -1,3 +1,3 @@
 export { setFeatureFlags, getFeatureFlag } from './setGetFeatures';
-export { toogleFeatures } from './toogleFeatures';
+export { toggleFeatures } from './toggleFeatures';
 export { ToggleFeatures } from './ToggleFeatures/ToggleFeatures';
