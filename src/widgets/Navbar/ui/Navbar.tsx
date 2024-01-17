@@ -12,6 +12,7 @@ import { HStack } from '@/shared/ui/Stack';
 import { NotificationButton } from '@/features/notificationButton';
 import { AvatarDropdown } from '@/features/avatarDropdown';
 import cls from './Navbar.module.scss';
+import { ToggleFeatures } from '@/shared/lib/features';
 
 interface NavbarProps {
     className?: string;
@@ -30,41 +31,83 @@ export const Navbar = memo(({ className }: NavbarProps) => {
         setIsAuthModal(true);
     }, []);
 
-    if (authData) {
+    const OldNavbar: React.FC<{ auth: boolean }> = (auth) => {
+        if (auth) {
+            return (
+                <header className={classNames(cls.Navbar, {}, [className])}>
+                    <Text
+                        className={cls.appName}
+                        title={t('FSD App')}
+                        theme={TextTheme.INVERTED}
+                    />
+                    <AppLink
+                        to={getRouteArticleCreate()}
+                        theme={AppLinkTheme.SECONDARY}
+                        className={cls.createBtn}
+                    >
+                        {t('Создать статью')}
+                    </AppLink>
+                    <HStack gap="16" className={cls.actions}>
+                        <NotificationButton />
+                        <AvatarDropdown />
+                    </HStack>
+                </header>
+            );
+        }
         return (
             <header className={classNames(cls.Navbar, {}, [className])}>
-                <Text
-                    className={cls.appName}
-                    title={t('FSD App')}
-                    theme={TextTheme.INVERTED}
-                />
-                <AppLink
-                    to={getRouteArticleCreate()}
-                    theme={AppLinkTheme.SECONDARY}
-                    className={cls.createBtn}
+                <Button
+                    theme={ButtonTheme.CLEAR_INVERTED}
+                    className={cls.links}
+                    onClick={onShowModal}
                 >
-                    {t('Создать статью')}
-                </AppLink>
-                <HStack gap="16" className={cls.actions}>
-                    <NotificationButton />
-                    <AvatarDropdown />
-                </HStack>
+                    {t('Войти')}
+                </Button>
+                {isAuthModal && (
+                    <LoginModal isOpen={isAuthModal} onClose={onCloseModal} />
+                )}
             </header>
         );
-    }
+    };
+
+    const RedesignedNavbar: React.FC<{ auth: boolean }> = (auth) => {
+        if (auth) {
+            return (
+                <header
+                    className={classNames(cls.NavbarRedesigned, {}, [
+                        className,
+                    ])}
+                >
+                    <HStack gap="16" className={cls.actions}>
+                        <NotificationButton />
+                        <AvatarDropdown />
+                    </HStack>
+                </header>
+            );
+        }
+        return (
+            <header
+                className={classNames(cls.NavbarRedesigned, {}, [className])}
+            >
+                <Button
+                    theme={ButtonTheme.CLEAR_INVERTED}
+                    className={cls.links}
+                    onClick={onShowModal}
+                >
+                    {t('Войти')}
+                </Button>
+                {isAuthModal && (
+                    <LoginModal isOpen={isAuthModal} onClose={onCloseModal} />
+                )}
+            </header>
+        );
+    };
 
     return (
-        <header className={classNames(cls.Navbar, {}, [className])}>
-            <Button
-                theme={ButtonTheme.CLEAR_INVERTED}
-                className={cls.links}
-                onClick={onShowModal}
-            >
-                {t('Войти')}
-            </Button>
-            {isAuthModal && (
-                <LoginModal isOpen={isAuthModal} onClose={onCloseModal} />
-            )}
-        </header>
+        <ToggleFeatures
+            feature="isAppRedesigned"
+            on={<RedesignedNavbar auth={Boolean(authData)} />}
+            off={<OldNavbar auth={Boolean(authData)} />}
+        />
     );
 });

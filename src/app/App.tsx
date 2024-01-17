@@ -9,6 +9,7 @@ import { AppRouter } from './providers/router';
 import { useAppDispatch } from '@/shared/lib/hooks/useAppDispatch/useAppDispatch';
 import { PageLoader } from '@/widgets/PageLoader';
 import { ToggleFeatures } from '@/shared/lib/features';
+import { MainLayout } from '@/shared/layouts/MainLayout';
 
 const App = () => {
     const { theme } = useTheme();
@@ -24,7 +25,7 @@ const App = () => {
         return <PageLoader />;
     }
 
-    if (!authData) {
+    const OldApp = () => {
         return (
             <div className={classNames('app', {}, [theme])}>
                 <Suspense fallback="">
@@ -36,33 +37,31 @@ const App = () => {
                 </Suspense>
             </div>
         );
+    };
+
+    const RedesignedApp = () => {
+        return (
+            <div className={classNames('app_redesigned', {}, [theme])}>
+                <Suspense fallback="">
+                    <MainLayout
+                        header={<Navbar />}
+                        content={<AppRouter />}
+                        sidebar={<Sidebar />}
+                    />
+                </Suspense>
+            </div>
+        );
+    };
+
+    if (!authData) {
+        return <OldApp />;
     }
 
     return (
         <ToggleFeatures
             feature="isAppRedesigned"
-            on={
-                <div className={classNames('app_redesigned ', {}, [theme])}>
-                    <Suspense fallback="">
-                        <Navbar />
-                        <div className="content-page">
-                            <Sidebar />
-                            {inited && <AppRouter />}
-                        </div>
-                    </Suspense>
-                </div>
-            }
-            off={
-                <div className={classNames('app', {}, [theme])}>
-                    <Suspense fallback="">
-                        <Navbar />
-                        <div className="content-page">
-                            <Sidebar />
-                            {inited && <AppRouter />}
-                        </div>
-                    </Suspense>
-                </div>
-            }
+            on={<RedesignedApp />}
+            off={<OldApp />}
         />
     );
 };
