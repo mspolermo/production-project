@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { memo, useCallback, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';
@@ -31,7 +32,7 @@ export const Navbar = memo(({ className }: NavbarProps) => {
         setIsAuthModal(true);
     }, []);
 
-    const OldNavbar: React.FC<{ auth: boolean }> = (auth) => {
+    const OldNavbar: React.FC<{ auth: boolean }> = ({ auth }) => {
         if (auth) {
             return (
                 <header className={classNames(cls.Navbar, {}, [className])}>
@@ -70,7 +71,7 @@ export const Navbar = memo(({ className }: NavbarProps) => {
         );
     };
 
-    const RedesignedNavbar: React.FC<{ auth: boolean }> = (auth) => {
+    const RedesignedNavbar: React.FC<{ auth: boolean }> = ({ auth }) => {
         if (auth) {
             return (
                 <header

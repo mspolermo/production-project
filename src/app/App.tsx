@@ -53,10 +53,6 @@ const App = () => {
         );
     };
 
-    if (!authData) {
-        return <OldApp />;
-    }
-
     return (
         <ToggleFeatures
             feature="isAppRedesigned"
