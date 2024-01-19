@@ -2,7 +2,7 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import { useTranslation } from 'react-i18next';
-import { Button } from '@/shared/ui/Button';
+import { Button } from '@/shared/ui/depricated/Button';
 import { useCounterActions } from '../model/slice/сounterSlice';
 import { useCounterValue } from '../model/selectors/getCounterValue/getCounterValue';
 
