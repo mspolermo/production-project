@@ -10,7 +10,7 @@ import cls from './Sidebar.module.scss';
 import { SidebarItem } from '../SidebarItem/SidebarItem';
 import { getSidebarItems } from '../../model/selectors/getSidebarItems';
 import { ToggleFeatures } from '@/shared/lib/features';
-import { AppLogo } from '@/shared/ui/depricated/AppLogo';
+import { AppLogo } from '@/shared/ui/redesigned/AppLogo';
 
 interface SidebarProps {
     className?: string;
@@ -80,6 +80,9 @@ export const Sidebar = memo(({ className }: SidebarProps) => {
                 )}
             >
                 <AppLogo className={cls.appLogo} />
+                <VStack role="navigation" gap="8" className={cls.items}>
+                    {itemsList}
+                </VStack>
             </aside>
         );
     };

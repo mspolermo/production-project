@@ -37,7 +37,9 @@ module.exports = {
                 'direction',
                 'role',
                 'as',
-                'feature'
+                'feature',
+                'color',
+                'variant'
             ],
         }],
         'react/jsx-filename-extension': [2, {
