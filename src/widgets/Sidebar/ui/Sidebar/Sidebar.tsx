@@ -37,7 +37,7 @@ export const Sidebar = memo(({ className }: SidebarProps) => {
         [collapsed, sidebarItemsList],
     );
 
-    const OldSidebar = () => {
+    const DepricatedSidebar = () => {
         return (
             <aside
                 data-testid="sidebar"
@@ -79,7 +79,10 @@ export const Sidebar = memo(({ className }: SidebarProps) => {
                     [className],
                 )}
             >
-                <AppLogo className={cls.appLogo} />
+                <AppLogo 
+                    className={cls.appLogo}
+                    size={collapsed ? 30 : 50 }
+                />
                 <VStack role="navigation" gap="8" className={cls.items}>
                     {itemsList}
                 </VStack>
@@ -91,7 +94,7 @@ export const Sidebar = memo(({ className }: SidebarProps) => {
         <ToggleFeatures
             feature="isAppRedesigned"
             on={<RedesignedSidebar />}
-            off={<OldSidebar />}
+            off={<DepricatedSidebar />}
         />
     );
 });
