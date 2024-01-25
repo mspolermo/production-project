@@ -2,9 +2,11 @@ import React, { memo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import {
-    Button,
+    Button as ButtonDepricated,
     ButtonTheme,
-} from '../../../../shared/ui/depricated/Button/Button';
+} from '@/shared/ui/depricated/Button/Button';
+import { ToggleFeatures } from '@/shared/lib/features';
+import { Button } from '@/shared/ui/redesigned/Button';
 
 interface LangSwitcherProps {
     className?: string;
@@ -17,13 +19,32 @@ export const LangSwitcher = memo(({ className, short }: LangSwitcherProps) => {
     const toogle = () => {
         i18n.changeLanguage(i18n.language === 'ru' ? 'en' : 'ru');
     };
+
+    const DepricatedLangSwitcher = () => {
+        return (
+            <ButtonDepricated
+                className={classNames('', {}, [className])}
+                theme={ButtonTheme.CLEAR}
+                onClick={toogle}
+            >
+                {t(short ? 'Короткий язык' : 'Язык')}
+            </ButtonDepricated>
+        );
+    };
+
+    const RedesignedLangSwitcher = () => {
+        return (
+            <Button variant='clear'>
+                {t(short ? 'Короткий язык' : 'Язык')}
+            </Button>
+        );
+    };
+
     return (
-        <Button
-            className={classNames('', {}, [className])}
-            theme={ButtonTheme.CLEAR}
-            onClick={toogle}
-        >
-            {t(short ? 'Короткий язык' : 'Язык')}
-        </Button>
+        <ToggleFeatures
+            feature="isAppRedesigned"
+            on={<RedesignedLangSwitcher />}
+            off={<DepricatedLangSwitcher/>}
+        />
     );
 });

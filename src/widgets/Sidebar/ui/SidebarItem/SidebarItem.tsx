@@ -38,12 +38,15 @@ export const SidebarItem = memo(({ item, collapsed }: SidebarItemProps) => {
     const RedesignedSidebarItem = () => {
         return (
             <AppLink
-                to={item.path}
-                className={classNames(cls.item, { [cls.collapsedRedesigned]: collapsed })}
-            >
-                <Icon Svg={item.Icon}/>
-                <span className={cls.link}>{t(item.text)}</span>
-            </AppLink>
+                    to={item.path}
+                    className={classNames(cls.itemRedesigned, {
+                        [cls.collapsedRedesigned]: collapsed,
+                    })}
+                    activeClassName={cls.active}
+                >
+                    <Icon Svg={item.Icon} />
+                    <span className={cls.link}>{t(item.text)}</span>
+                </AppLink>
         );
     };
 

@@ -95,6 +95,10 @@ export const Sidebar = memo(({ className }: SidebarProps) => {
                     className={cls.collapseBtn}
                     onClick={onToggle}
                 />
+                <div className={cls.switchers}>
+                    <ThemeSwitcher />
+                    <LangSwitcher short={collapsed} className={cls.lang} />
+                </div>
             </aside>
         );
     };
