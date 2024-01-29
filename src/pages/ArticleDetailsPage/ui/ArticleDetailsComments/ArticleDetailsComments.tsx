@@ -6,7 +6,7 @@ import { Text, TextSize } from '@/shared/ui/depricated/Text';
 import { AddCommentForm } from '@/features/addCommentForm';
 import { CommentList } from '@/entities/Comment';
 import { useInitialEffect } from '@/shared/lib/hooks/useInitialEffect/useInitialEffect';
-import { VStack } from '@/shared/ui/depricated/Stack';
+import { VStack } from '@/shared/ui/redesigned/Stack';
 import { Loader } from '@/shared/ui/depricated/Loader';
 import { fetchCommentsByArticleId } from '../../model/services/fetchCommentsByArticleId/fetchCommentsByArticleId';
 import { getArticleComments } from '../../model/slices/articleDetailsCommentsSlice';

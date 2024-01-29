@@ -1,6 +1,6 @@
 import React, { memo } from 'react';
 import cls from './AppLogo.module.scss';
-import { HStack } from '../../depricated/Stack';
+import { HStack } from '../Stack';
 import AppSvg from '@/shared/assets/icons/app-image.svg';
 import { classNames } from '@/shared/lib/classNames/classNames';
 
@@ -18,7 +18,12 @@ export const AppLogo = memo(({ className, size = 50 }: AppLogoProps) => {
         >
             <div className={cls.gradientBig} />
             <div className={cls.gradientSmall} />
-            <AppSvg width={size} height={size} color='black' className={cls.appLogo} />
+            <AppSvg
+                width={size}
+                height={size}
+                color="black"
+                className={cls.appLogo}
+            />
         </HStack>
     );
 });

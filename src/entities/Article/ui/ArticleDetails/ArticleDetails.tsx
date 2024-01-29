@@ -12,7 +12,7 @@ import { Skeleton } from '@/shared/ui/depricated/Skeleton';
 import EyeIcon from '@/shared/assets/icons/eye-20-20.svg';
 import CalendarIcon from '@/shared/assets/icons/calendar-20-20.svg';
 import { Icon } from '@/shared/ui/depricated/Icon';
-import { HStack, VStack } from '@/shared/ui/depricated/Stack';
+import { HStack, VStack } from '@/shared/ui/redesigned/Stack';
 import { Avatar } from '../../../../shared/ui/depricated/Avatar/Avatar';
 import { ArticleBlock } from '../../model/types/article';
 import { ArticleBlockType } from '../../model/consts/articleConsts';

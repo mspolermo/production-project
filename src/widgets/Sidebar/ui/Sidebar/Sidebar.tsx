@@ -5,7 +5,7 @@ import { classNames } from '@/shared/lib/classNames/classNames';
 import { ThemeSwitcher } from '@/features/ThemeSwitcher';
 import { LangSwitcher } from '@/features/LangSwitcher';
 import { Button, ButtonSize, ButtonTheme } from '@/shared/ui/depricated/Button';
-import { VStack } from '@/shared/ui/depricated/Stack';
+import { VStack } from '@/shared/ui/redesigned/Stack';
 import cls from './Sidebar.module.scss';
 import { SidebarItem } from '../SidebarItem/SidebarItem';
 import { getSidebarItems } from '../../model/selectors/getSidebarItems';
@@ -81,10 +81,7 @@ export const Sidebar = memo(({ className }: SidebarProps) => {
                     [className],
                 )}
             >
-                <AppLogo 
-                    className={cls.appLogo}
-                    size={collapsed ? 30 : 50 }
-                />
+                <AppLogo className={cls.appLogo} size={collapsed ? 30 : 50} />
                 <VStack role="navigation" gap="8" className={cls.items}>
                     {itemsList}
                 </VStack>
