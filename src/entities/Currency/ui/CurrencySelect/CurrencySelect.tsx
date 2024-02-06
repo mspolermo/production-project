@@ -1,7 +1,9 @@
-import React, { memo, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
-import { ListBox } from '@/shared/ui/depricated/Popups';
+import { memo, useCallback } from 'react';
+import { ListBox as ListBoxDeprecated } from '@/shared/ui/depricated/Popups';
 import { Currency } from '../../model/types/currency';
+import { ToggleFeatures } from '@/shared/lib/features';
+import { ListBox } from '@/shared/ui/redesigned/Popups';
 
 interface CurrencySelectProps {
     className?: string;
@@ -9,6 +11,7 @@ interface CurrencySelectProps {
     onChange?: (value: Currency) => void;
     readonly?: boolean;
 }
+
 const options = [
     { value: Currency.RUB, content: Currency.RUB },
     { value: Currency.EUR, content: Currency.EUR },
@@ -17,7 +20,8 @@ const options = [
 
 export const CurrencySelect = memo(
     ({ className, value, onChange, readonly }: CurrencySelectProps) => {
-        const { t } = useTranslation('profile');
+        const { t } = useTranslation();
+
         const onChangeHandler = useCallback(
             (value: string) => {
                 onChange?.(value as Currency);
@@ -25,15 +29,22 @@ export const CurrencySelect = memo(
             [onChange],
         );
 
+        const props = {
+            className,
+            value,
+            defaultValue: t('Укажите валюту'),
+            label: t('Укажите валюту'),
+            items: options,
+            onChange: onChangeHandler,
+            readonly,
+            direction: 'top right' as const,
+        };
+
         return (
-            <ListBox
-                className={className}
-                readonly={readonly}
-                value={value}
-                defaultValue={t('Укажите валюту')}
-                label={t('Укажите валюту')}
-                items={options}
-                onChange={onChangeHandler}
+            <ToggleFeatures
+                feature="isAppRedesigned"
+                on={<ListBox {...props} />}
+                off={<ListBoxDeprecated {...props} />}
             />
         );
     },
