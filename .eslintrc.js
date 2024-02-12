@@ -40,7 +40,8 @@ module.exports = {
                 'feature',
                 'color',
                 'variant',
-                'size'
+                'size',
+                'wrap'
             ],
         }],
         'react/jsx-filename-extension': [2, {

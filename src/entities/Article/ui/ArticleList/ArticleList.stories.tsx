@@ -1,8 +1,9 @@
 import React from 'react';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
+
+import { ArticleView } from '../../model/consts/articleConsts';
 import { ArticleList } from './ArticleList';
 import { Article } from '../../model/types/article';
-import { ArticleView } from '../../model/consts/articleConsts';
 
 export default {
     title: 'entities/Article/ArticleList',
@@ -18,17 +19,17 @@ const Template: ComponentStory<typeof ArticleList> = (args) => (
 
 const article = {
     id: '1',
-    title: 'Javascript news',
+    title: 'Javascript news asfasjf asfjkask f',
     subtitle: 'Что нового в JS за 2022 год?',
     img: 'https://teknotower.com/wp-content/uploads/2020/11/js.png',
     views: 1022,
     createdAt: '26.02.2022',
     user: {
         id: '1',
-        username: 'admin',
-        avatar: 'https://img2.reactor.cc/pics/post/full/Bebop-Bebop-and-Rocksteady-TMNT-%D1%84%D1%8D%D0%BD%D0%B4%D0%BE%D0%BC%D1%8B-5457666.jpeg',
+        username: 'Ulbi tv',
+        avatar: 'https://xakep.ru/wp-content/uploads/2018/05/171485/KuroiSH-hacker.jpg',
     },
-    type: ['IT'],
+    type: ['IT', 'SCIENCE', 'POLITICS', 'ECONOMICS'],
     blocks: [
         {
             id: '1',
@@ -93,15 +94,15 @@ const article = {
 
 export const LoadingBig = Template.bind({});
 LoadingBig.args = {
-    isLoading: true,
     articles: [],
+    isLoading: true,
     view: ArticleView.BIG,
 };
 
 export const LoadingSmall = Template.bind({});
 LoadingSmall.args = {
-    isLoading: true,
     articles: [],
+    isLoading: true,
     view: ArticleView.SMALL,
 };
 
@@ -111,14 +112,16 @@ ListSmall.args = {
         ...article,
         id: String(index),
     })),
+    isLoading: false,
     view: ArticleView.SMALL,
 };
 
 export const ListBig = Template.bind({});
 ListBig.args = {
-    articles: new Array(3).fill(0).map((item, index) => ({
+    articles: new Array(9).fill(0).map((item, index) => ({
         ...article,
         id: String(index),
     })),
+    isLoading: false,
     view: ArticleView.BIG,
 };
