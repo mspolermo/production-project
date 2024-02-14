@@ -1,7 +1,7 @@
 /* eslint-disable arrow-body-style */
 import { Suspense } from 'react';
 import { classNames } from '@/shared/lib/classNames/classNames';
-import { Modal } from '@/shared/ui/depricated/Modal';
+import { Modal } from '@/shared/ui/redesigned/Modal';
 import { Loader } from '@/shared/ui/depricated/Loader';
 import { LoginFormAsync } from '../LoginForm/LoginForm.async';
 
