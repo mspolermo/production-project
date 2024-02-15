@@ -34,7 +34,7 @@ export const LangSwitcher = memo(({ className, short }: LangSwitcherProps) => {
 
     const RedesignedLangSwitcher = () => {
         return (
-            <Button variant='clear'>
+            <Button variant='clear' onClick={toogle}>
                 {t(short ? 'Короткий язык' : 'Язык')}
             </Button>
         );
