@@ -1,9 +1,9 @@
 import React, { memo } from 'react';
 import { classNames } from '@/shared/lib/classNames/classNames';
-import { Avatar } from '@/shared/ui/depricated/Avatar';
-import { Text } from '@/shared/ui/depricated/Text';
-import { Skeleton } from '@/shared/ui/depricated/Skeleton';
-import { AppLink } from '@/shared/ui/depricated/AppLink';
+import { Avatar } from '@/shared/ui/deprecated/Avatar';
+import { Text } from '@/shared/ui/deprecated/Text';
+import { Skeleton } from '@/shared/ui/deprecated/Skeleton';
+import { AppLink } from '@/shared/ui/deprecated/AppLink';
 import { getRouteProfile } from '@/shared/const/router';
 import { VStack } from '@/shared/ui/redesigned/Stack';
 import { Comment } from '../../model/types/comment';

@@ -15,7 +15,7 @@ import cls from './ArticleDetailsPage.module.scss';
 import { articleDetailsPageReducer } from '../../model/slices';
 import { ArticleDetailsPageHeader } from '../ArticleDetailsPageHeader/ArticleDetailsPageHeader';
 import { ToggleFeatures } from '@/shared/lib/features';
-import { Card } from '@/shared/ui/depricated/Card';
+import { Card } from '@/shared/ui/deprecated/Card';
 import { ArticleRating } from '@/features/articleRating';
 import { StickyContentLayout } from '@/shared/layouts/StickyContentLayout';
 import { DetailsContainer } from '../DetailsContainer/DetailsContainer';

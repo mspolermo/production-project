@@ -4,7 +4,7 @@ import { classNames } from '@/shared/lib/classNames/classNames';
 import {
     Button as ButtonDepricated,
     ButtonTheme,
-} from '@/shared/ui/depricated/Button/Button';
+} from '@/shared/ui/deprecated/Button/Button';
 import { ToggleFeatures } from '@/shared/lib/features';
 import { Button } from '@/shared/ui/redesigned/Button';
 
@@ -34,7 +34,7 @@ export const LangSwitcher = memo(({ className, short }: LangSwitcherProps) => {
 
     const RedesignedLangSwitcher = () => {
         return (
-            <Button variant='clear' onClick={toogle}>
+            <Button variant="clear" onClick={toogle}>
                 {t(short ? 'Короткий язык' : 'Язык')}
             </Button>
         );
@@ -44,7 +44,7 @@ export const LangSwitcher = memo(({ className, short }: LangSwitcherProps) => {
         <ToggleFeatures
             feature="isAppRedesigned"
             on={<RedesignedLangSwitcher />}
-            off={<DepricatedLangSwitcher/>}
+            off={<DepricatedLangSwitcher />}
         />
     );
 });

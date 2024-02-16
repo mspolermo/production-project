@@ -1,8 +1,8 @@
 import { memo } from 'react';
 import { classNames } from '@/shared/lib/classNames/classNames';
-import { Card as CardDeprecated } from '@/shared/ui/depricated/Card';
+import { Card as CardDeprecated } from '@/shared/ui/deprecated/Card';
 import { Card as CardRedesigned } from '@/shared/ui/redesigned/Card';
-import { Skeleton as SkeletonDeprecated } from '@/shared/ui/depricated/Skeleton';
+import { Skeleton as SkeletonDeprecated } from '@/shared/ui/deprecated/Skeleton';
 import { Skeleton as SkeletonRedesigned } from '@/shared/ui/redesigned/Skeleton';
 import { ArticleView } from '../../model/consts/articleConsts';
 import cls from './ArticleListItem.module.scss';

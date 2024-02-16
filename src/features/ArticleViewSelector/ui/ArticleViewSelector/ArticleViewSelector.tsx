@@ -6,11 +6,11 @@ import TiledIconDeprecated from '@/shared/assets/icons/tiled-24-24.svg';
 import ListIcon from '@/shared/assets/icons/burger.svg';
 import TiledIcon from '@/shared/assets/icons/tile.svg';
 
-import { Icon as IconDeprecated } from '@/shared/ui/depricated/Icon';
+import { Icon as IconDeprecated } from '@/shared/ui/deprecated/Icon';
 import {
     Button as ButtonDeprecated,
     ButtonTheme,
-} from '@/shared/ui/depricated/Button';
+} from '@/shared/ui/deprecated/Button';
 import cls from './ArticleViewSelector.module.scss';
 import { ArticleView } from '@/entities/Article';
 import { ToggleFeatures, toggleFeatures } from '@/shared/lib/features';

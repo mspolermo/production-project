@@ -2,7 +2,7 @@ import React, { memo, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';
 import { classNames } from '@/shared/lib/classNames/classNames';
-import { Dropdown as DropdownDepricated } from '@/shared/ui/depricated/Popups';
+import { Dropdown as DropdownDepricated } from '@/shared/ui/deprecated/Popups';
 import { useAppDispatch } from '@/shared/lib/hooks/useAppDispatch/useAppDispatch';
 import {
     getUserAuthData,
@@ -10,8 +10,12 @@ import {
     isUserManager,
     userActions,
 } from '@/entities/User';
-import { getRouteAdmin, getRouteProfile, getRouteSettings } from '@/shared/const/router';
-import { Avatar as AvatarDepricated} from '@/shared/ui/depricated/Avatar';
+import {
+    getRouteAdmin,
+    getRouteProfile,
+    getRouteSettings,
+} from '@/shared/const/router';
+import { Avatar as AvatarDepricated } from '@/shared/ui/deprecated/Avatar';
 import { ToggleFeatures } from '@/shared/lib/features';
 import { Dropdown } from '@/shared/ui/redesigned/Popups';
 import { Avatar } from '@/shared/ui/redesigned/Avatar';
@@ -68,10 +72,14 @@ export const AvatarDropdown = memo((props: AvatarDropdownProps) => {
                 direction="bottom left"
                 items={items}
                 trigger={
-                    <AvatarDepricated fallbackInverted size={30} src={authData.avatar} />
+                    <AvatarDepricated
+                        fallbackInverted
+                        size={30}
+                        src={authData.avatar}
+                    />
                 }
             />
-        )
+        );
     };
 
     const RedesignedAvatarDropdown = () => {
@@ -80,11 +88,9 @@ export const AvatarDropdown = memo((props: AvatarDropdownProps) => {
                 className={classNames('', {}, [className])}
                 direction="bottom left"
                 items={items}
-                trigger={
-                    <Avatar size={40} src={authData.avatar} />
-                }
+                trigger={<Avatar size={40} src={authData.avatar} />}
             />
-        )
+        );
     };
 
     return (

@@ -1,7 +1,7 @@
 import React, { memo } from 'react';
 import { classNames } from '@/shared/lib/classNames/classNames';
-import { Card as CardDepricated, CardTheme } from '@/shared/ui/depricated/Card';
-import { Text as TextDepricated } from '@/shared/ui/depricated/Text';
+import { Card as CardDepricated, CardTheme } from '@/shared/ui/deprecated/Card';
+import { Text as TextDepricated } from '@/shared/ui/deprecated/Text';
 import cls from './NotificationItem.module.scss';
 import { Notification } from '../../model/types/notification';
 import { ToggleFeatures } from '@/shared/lib/features';
@@ -18,20 +18,27 @@ export const NotificationItem = memo((props: NotificationItemProps) => {
 
     const content = (
         <ToggleFeatures
-            feature='isAppRedesigned' 
+            feature="isAppRedesigned"
             on={
                 <Card
-                    className={classNames(cls.NotificationItem, {}, [className])}
+                    className={classNames(cls.NotificationItem, {}, [
+                        className,
+                    ])}
                 >
-                <Text title={item.title} text={item.description} />
+                    <Text title={item.title} text={item.description} />
                 </Card>
-            } 
+            }
             off={
                 <CardDepricated
                     theme={CardTheme.OUTLINED}
-                    className={classNames(cls.NotificationItem, {}, [className])}
+                    className={classNames(cls.NotificationItem, {}, [
+                        className,
+                    ])}
                 >
-                    <TextDepricated title={item.title} text={item.description} />
+                    <TextDepricated
+                        title={item.title}
+                        text={item.description}
+                    />
                 </CardDepricated>
             }
         />
