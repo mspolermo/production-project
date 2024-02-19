@@ -1,5 +1,5 @@
-import React, { memo, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
+import { memo, useCallback } from 'react';
 import { useSelector } from 'react-redux';
 import { RatingCard } from '@/entities/Rating';
 import {
@@ -16,9 +16,9 @@ export interface ArticleRatingProps {
 
 const ArticleRating = memo((props: ArticleRatingProps) => {
     const { className, articleId } = props;
-    const { t } = useTranslation('article');
-
+    const { t } = useTranslation();
     const userData = useSelector(getUserAuthData);
+
     const { data, isLoading } = useGetArticleRating({
         articleId,
         userId: userData?.id ?? '',
