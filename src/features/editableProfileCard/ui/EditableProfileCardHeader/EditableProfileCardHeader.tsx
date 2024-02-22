@@ -79,6 +79,7 @@ export const EditableProfileCardHeader = memo(
                                             <Button
                                                 onClick={onSave}
                                                 data-testid="EditableProfileCardHeader.SaveButton"
+                                                variant = 'outline'
                                                 color="success"
                                             >
                                                 {t('Сохранить')}
