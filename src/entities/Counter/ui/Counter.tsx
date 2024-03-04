@@ -1,9 +1,7 @@
-/* eslint-disable i18next/no-literal-string */
-import React from 'react';
 import { useDispatch } from 'react-redux';
 import { useTranslation } from 'react-i18next';
 import { Button } from '@/shared/ui/deprecated/Button';
-import { useCounterActions } from '../model/slice/сounterSlice';
+import { useCounterActions } from '../model/slice/counterSlice';
 import { useCounterValue } from '../model/selectors/getCounterValue/getCounterValue';
 
 export const Counter = () => {
@@ -15,9 +13,11 @@ export const Counter = () => {
     const handleInc = () => {
         increment();
     };
+
     const handleDec = () => {
         decrement();
     };
+
     const handleAddFive = () => {
         add(5);
     };
@@ -25,14 +25,14 @@ export const Counter = () => {
     return (
         <div>
             <h1 data-testid="value-title">{counterValue}</h1>
-            <Button data-testid="increment-btn" onClick={handleInc}>
+            <Button onClick={handleAddFive} data-testid="increment-btn5">
+                {t('add5')}
+            </Button>
+            <Button onClick={handleInc} data-testid="increment-btn">
                 {t('increment')}
             </Button>
             <Button data-testid="decrement-btn" onClick={handleDec}>
                 {t('decrement')}
-            </Button>
-            <Button data-testid="incFive-btn" onClick={handleAddFive}>
-                {t('addFive')}
             </Button>
         </div>
     );
