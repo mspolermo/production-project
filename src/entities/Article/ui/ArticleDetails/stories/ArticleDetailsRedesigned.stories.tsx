@@ -5,12 +5,13 @@ import { StoreDecorator } from '@/shared/config/storybook/StoreDecorator/StoreDe
 import {
     ArticleType,
     ArticleBlockType,
-} from '../../model/consts/articleConsts';
-import { Article } from '../../model/types/article';
-import { ArticleDetails } from './ArticleDetails';
+} from '../../../model/consts/articleConsts';
+import { Article } from '../../../model/types/article';
+import { ArticleDetails } from '../ArticleDetails';
+import { NewDesignDecorator } from '@/shared/config/storybook/NewDesignDecorator/NewDesignDecorator';
 
 export default {
-    title: 'entities/Article/ArticleDetails',
+    title: 'entities/Article/ArticleDetails/Redesigned',
     component: ArticleDetails,
     argTypes: {
         backgroundColor: { control: 'color' },
@@ -67,8 +68,9 @@ Normal.decorators = [
     StoreDecorator({
         articleDetails: {
             data: article,
-        },
+        }
     }),
+    NewDesignDecorator
 ];
 
 export const Loading = Template.bind({});
@@ -79,6 +81,7 @@ Loading.decorators = [
             isLoading: true,
         },
     }),
+    NewDesignDecorator
 ];
 
 export const Error = Template.bind({});
@@ -89,4 +92,5 @@ Error.decorators = [
             error: 'error',
         },
     }),
+    NewDesignDecorator
 ];

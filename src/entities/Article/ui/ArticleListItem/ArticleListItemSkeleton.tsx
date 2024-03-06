@@ -7,6 +7,7 @@ import { Skeleton as SkeletonRedesigned } from '@/shared/ui/redesigned/Skeleton'
 import { ArticleView } from '../../model/consts/articleConsts';
 import cls from './ArticleListItem.module.scss';
 import { ToggleFeatures, toggleFeatures } from '@/shared/lib/features';
+import { HStack, VStack } from '@/shared/ui/redesigned/Stack';
 
 interface ArticleListItemSkeletonProps {
     className?: string;
@@ -62,7 +63,11 @@ export const ArticleListItemSkeleton = memo(
                     <ToggleFeatures
                         feature="isAppRedesigned"
                         on={
-                            <CardRedesigned border="round" className={cls.card}>
+                            <CardRedesigned
+                                border="round"
+                                className={cls.card}
+                                padding="16"
+                            >
                                 {cardContent}
                             </CardRedesigned>
                         }
@@ -77,32 +82,45 @@ export const ArticleListItemSkeleton = memo(
         }
 
         const cardContent = (
-            <>
-                <ToggleFeatures
-                    feature="isAppRedesigned"
-                    on={
+            <ToggleFeatures
+                feature="isAppRedesigned"
+                on={
+                    <VStack gap="16">
                         <Skeleton
                             width="100%"
-                            height={150}
+                            height={130}
                             border="32px"
                             className={cls.img}
                         />
-                    }
-                    off={
-                        <div className={cls.imageWrapper}>
+                        <Skeleton width="100%" height={80} />
+                        <Skeleton
+                            width="100%"
+                            height={16}
+                            className={cls.title}
+                        />
+                        <HStack gap='8'>
+                            <Skeleton border="50%" height={36} width={36} />
                             <Skeleton
-                                width={200}
-                                height={200}
-                                className={cls.img}
+                                width={150}
+                                height={20}
+                                className={cls.username}
                             />
-                        </div>
-                    }
-                />
-                <div className={cls.infoWrapper}>
-                    <Skeleton width={130} height={16} />
-                </div>
-                <Skeleton width={150} height={16} className={cls.title} />
-            </>
+                        </HStack>
+                    </VStack>
+                }
+                off={
+                    <VStack gap="8">
+                        <Skeleton
+                            width={200}
+                            height={210}
+                            className={cls.img}
+                        />
+
+                        <Skeleton width="100%" height={20} />
+                        <Skeleton width="100%" height={20} />
+                    </VStack>
+                }
+            />
         );
 
         return (
