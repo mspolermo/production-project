@@ -1,14 +1,15 @@
 import { useTranslation } from 'react-i18next';
 import { HTMLAttributeAnchorTarget, memo } from 'react';
 import { classNames } from '@/shared/lib/classNames/classNames';
-import { Text, TextSize } from '@/shared/ui/deprecated/Text';
+import { Text as TextDepricated, TextSize } from '@/shared/ui/deprecated/Text';
+import { Text } from '@/shared/ui/redesigned/Text';
 import { ArticleView } from '../../model/consts/articleConsts';
 import { ArticleListItemSkeleton } from '../ArticleListItem/ArticleListItemSkeleton';
 import { ArticleListItem } from '../ArticleListItem/ArticleListItem';
 import cls from './ArticleList.module.scss';
 import { Article } from '../../model/types/article';
 import { ToggleFeatures } from '@/shared/lib/features';
-import { HStack } from '@/shared/ui/redesigned/Stack';
+import { HStack, VStack } from '@/shared/ui/redesigned/Stack';
 
 interface ArticleListProps {
     className?: string;
@@ -45,9 +46,16 @@ export const ArticleList = memo((props: ArticleListProps) => {
                 className={classNames(cls.ArticleList, {}, [
                     className,
                     cls[view],
+                    cls.NotFound
                 ])}
             >
-                <Text size={TextSize.L} title={t('Статьи не найдены')} />
+                <VStack max align='center' justify='center'>
+                    <ToggleFeatures
+                        feature="isAppRedesigned"
+                        on={<Text size='l' title={t('Статьи не найдены')} />}
+                        off={<TextDepricated size={TextSize.L} title={t('Статьи не найдены')} />}
+                    />
+                </VStack>
             </div>
         );
     }

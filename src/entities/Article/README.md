@@ -1,26 +1,45 @@
 ## Сущность статьи
 
 Описание:
-описываем сущность.
+Статья. Список статей.
 
 #### Public api
 
-- Components
+- UI Components
 
-`ArticleDetails` - компонент с информацией о статье
+`ArticleDetails` - Компонент с информацией о статье (детальный просмотр статьи)
 
 `ArticleList` -  Компонент со списком статей
 
-`ArticleViewSelector` - Компонент переключатель отображения списка статьей (плитка, список)
+`ArticleListItem` -  Компонент кратким видом 1 статьи (для списка) и скелетонами
 
-`ArticleSortSelector` - Компонент с выбором сортировки списка статьей
+`ArticleCodeBlockComponent` - Компонент для отображения блока с кодом в детальном просмотре статьи
 
-`ArticleTypeTabs` - Компонент с выбором типа статьи
+`ArticleImageBlockComponent` - Компонент для отображения изображения в детальном просмотре статьи
 
-- types
+`ArticleTextBlockComponent`- Компонент вывода в детальном просмотре статьи
+
+##### Model
+
+- Types
 
 `Article` - Тип, описывающий статью
 
-- selectors
+`ArticleDetailsSchema` - Асинхронные типы для загрузки статьи
+
+- Selectors
 
 `getArticleDetailsData` - Селектор для получения информации о текущей открытой статье
+`getArticleDetailsIsLoading` - Селектор для получения информации о загрузки статьи
+`getArticleDetailsError` - Селектор для получения информации об ошибке в ходе загрузки
+
+- Slice
+
+`articleDetailsSlice` - Слайз для загрузки статьи (redux)
+
+- Consts
+
+`ArticleSortField` - Виды сортировок в списке статей
+`ArticleBlockType` - Виды блоков информации в детальном просмотре статьи
+`ArticleType` - Тематика статьи
+`ArticleView` - Виды карточек в списке статей
