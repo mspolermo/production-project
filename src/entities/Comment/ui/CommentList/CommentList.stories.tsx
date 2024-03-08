@@ -2,6 +2,7 @@ import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
 import { CommentList } from './CommentList';
+import { NewDesignDecorator } from '@/shared/config/storybook/NewDesignDecorator/NewDesignDecorator';
 
 export default {
     title: 'entities/Comment/CommentList',
@@ -31,8 +32,32 @@ Normal.args = {
     ],
 };
 
+export const NormalRedesigned = Template.bind({});
+NormalRedesigned.args = {
+    comments: [
+        {
+            id: '1',
+            text: 'hello world',
+            user: { id: '1', username: 'Vasya' },
+        },
+        {
+            id: '2',
+            text: 'Comment 2',
+            user: { id: '1', username: 'Petya' },
+        },
+    ],
+};
+NormalRedesigned.decorators = [NewDesignDecorator];
+
 export const Loading = Template.bind({});
 Loading.args = {
     comments: [],
     isLoading: true,
 };
+
+export const LoadingRedesigned = Template.bind({});
+LoadingRedesigned.args = {
+    comments: [],
+    isLoading: true,
+};
+LoadingRedesigned.decorators = [NewDesignDecorator];

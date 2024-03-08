@@ -3,13 +3,13 @@ import { ComponentMeta, ComponentStory } from '@storybook/react';
 import { Country } from '@/entities/Country';
 import { Currency } from '@/entities/Currency';
 import avatar from '@/shared/assets/test/storybook.jpg';
-import { ProfileCard } from './ProfileCard';
+import { ProfileCard } from '../ProfileCard';
 import { NewDesignDecorator } from '@/shared/config/storybook/NewDesignDecorator/NewDesignDecorator';
 import { ThemeDecorator } from '@/shared/config/storybook/ThemeDecorator/ThemeDecorator';
 import { Theme } from '@/shared/const/theme';
 
 export default {
-    title: 'entities/ProfileCard',
+    title: 'entities/ProfileCard/Redesigned',
     component: ProfileCard,
     argTypes: {
         backgroundColor: { control: 'color' },
@@ -33,19 +33,19 @@ const primaryArgs = {
     },
 };
 
+
 export const Primary = Template.bind({});
 Primary.args = primaryArgs;
-
-export const PrimaryRedesigned = Template.bind({});
-PrimaryRedesigned.args = primaryArgs;
-PrimaryRedesigned.decorators = [NewDesignDecorator, ThemeDecorator(Theme.DARK)];
+Primary.decorators = [NewDesignDecorator, ThemeDecorator(Theme.DARK)];
 
 export const withError = Template.bind({});
 withError.args = {
     error: 'true',
 };
+withError.decorators = [NewDesignDecorator];
 
 export const Loading = Template.bind({});
 Loading.args = {
     isLoading: true,
 };
+Loading.decorators = [NewDesignDecorator];

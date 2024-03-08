@@ -39,3 +39,14 @@ Loading.args = {
     },
     isLoading: true,
 };
+
+export const LoadingRedesigned = Template.bind({});
+LoadingRedesigned.args = {
+    comment: {
+        id: '1',
+        text: 'hello world',
+        user: { id: '1', username: 'Vasya' },
+    },
+    isLoading: true,
+};
+LoadingRedesigned.decorators = [NewDesignDecorator];
