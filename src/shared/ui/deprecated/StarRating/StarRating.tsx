@@ -78,7 +78,7 @@ export const StarRating = memo((props: StarRatingProps) => {
                     'data-selected': currentStarsCount >= starNumber,
                 };
                 return (
-                    <ToggleFeatures
+                    <ToggleFeatures key={starNumber}
                         feature="isAppRedesigned"
                         on={<Icon clickable={!isSelected} {...commonProps} />}
                         off={<IconDeprecated {...commonProps} />}

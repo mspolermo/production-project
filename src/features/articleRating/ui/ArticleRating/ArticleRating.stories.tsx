@@ -3,6 +3,20 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 
 import ArticleRating from './ArticleRating';
 import { StoreDecorator } from '@/shared/config/storybook/StoreDecorator/StoreDecorator';
+import { NewDesignDecorator } from '@/shared/config/storybook/NewDesignDecorator/NewDesignDecorator';
+
+const mockDefault = [
+    {
+        url: `${__API__}/article-ratings?userId=1&articleId=2`,
+        method: 'GET',
+        status: 200,
+        response: [
+            {
+                rate: 3,
+            },
+        ],
+    },
+];
 
 export default {
     title: 'features/ArticleRating',
@@ -28,18 +42,23 @@ Normal.decorators = [
     }),
 ];
 Normal.parameters = {
-    mockData: [
-        {
-            url: `${__API__}/article-ratings?userId=1&articleId=1`,
-            method: 'GET',
-            status: 200,
-            response: [
-                {
-                    rate: 4,
-                },
-            ],
+    mockData: mockDefault
+};
+
+export const NormalRedesigned = Template.bind({});
+NormalRedesigned.args = {
+    articleId: '1',
+};
+NormalRedesigned.decorators = [
+    StoreDecorator({
+        user: {
+            authData: { id: '1' },
         },
-    ],
+    }),
+    NewDesignDecorator
+];
+NormalRedesigned.parameters = {
+    mockData: mockDefault,
 };
 
 export const WithoutRate = Template.bind({});
@@ -54,6 +73,29 @@ WithoutRate.decorators = [
     }),
 ];
 WithoutRate.parameters = {
+    mockData: [
+        {
+            url: `${__API__}/article-ratings?userId=1&articleId=1`,
+            method: 'GET',
+            status: 200,
+            response: [],
+        },
+    ],
+};
+
+export const WithoutRateRedesigned = Template.bind({});
+WithoutRate.args = {
+    articleId: '1',
+};
+WithoutRateRedesigned.decorators = [
+    StoreDecorator({
+        user: {
+            authData: { id: '1' },
+        },
+    }),
+    NewDesignDecorator
+];
+WithoutRateRedesigned.parameters = {
     mockData: [
         {
             url: `${__API__}/article-ratings?userId=1&articleId=1`,
