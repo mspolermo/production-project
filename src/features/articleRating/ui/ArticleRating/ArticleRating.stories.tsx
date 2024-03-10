@@ -19,7 +19,7 @@ const mockDefault = [
 ];
 
 export default {
-    title: 'features/ArticleRating',
+    title: 'features/Article/ArticleRating',
     component: ArticleRating,
     argTypes: {
         backgroundColor: { control: 'color' },

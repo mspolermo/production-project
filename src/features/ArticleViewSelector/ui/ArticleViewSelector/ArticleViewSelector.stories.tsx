@@ -2,9 +2,10 @@ import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
 import { ArticleViewSelector } from './ArticleViewSelector';
+import { NewDesignDecorator } from '@/shared/config/storybook/NewDesignDecorator/NewDesignDecorator';
 
 export default {
-    title: 'entities/Article/ArticleViewSelector',
+    title: 'features/ArticleList/ViewSelector',
     component: ArticleViewSelector,
     argTypes: {
         backgroundColor: { control: 'color' },
@@ -17,3 +18,7 @@ const Template: ComponentStory<typeof ArticleViewSelector> = (args) => (
 
 export const Normal = Template.bind({});
 Normal.args = {};
+
+export const NormalRedesigned = Template.bind({});
+NormalRedesigned.args = {};
+NormalRedesigned.decorators = [NewDesignDecorator]

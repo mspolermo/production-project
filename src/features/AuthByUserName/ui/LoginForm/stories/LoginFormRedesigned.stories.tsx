@@ -1,10 +1,11 @@
 import React from 'react';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 import { StoreDecorator } from '@/shared/config/storybook/StoreDecorator/StoreDecorator';
-import LoginForm from './LoginForm';
+import LoginForm from '../LoginForm';
+import { NewDesignDecorator } from '@/shared/config/storybook/NewDesignDecorator/NewDesignDecorator';
 
 export default {
-    title: 'features/LoginForm',
+    title: 'features/LoginForm/Redesigned',
     component: LoginForm,
     argTypes: {
         backgroundColor: { control: 'color' },
@@ -21,6 +22,7 @@ Primary.decorators = [
     StoreDecorator({
         loginForm: { username: '123', password: 'asd' },
     }),
+    NewDesignDecorator
 ];
 
 export const withError = Template.bind({});
@@ -29,6 +31,7 @@ withError.decorators = [
     StoreDecorator({
         loginForm: { username: '123', password: 'asd', error: 'ERROR' },
     }),
+    NewDesignDecorator
 ];
 
 export const Loading = Template.bind({});
@@ -37,4 +40,5 @@ Loading.decorators = [
     StoreDecorator({
         loginForm: { isLoading: true },
     }),
+    NewDesignDecorator
 ];

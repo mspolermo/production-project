@@ -7,7 +7,7 @@ import { ArticleRecommendationsList } from './ArticleRecommendationsList';
 import { NewDesignDecorator } from '@/shared/config/storybook/NewDesignDecorator/NewDesignDecorator';
 
 export default {
-    title: 'features/ArticleRecommendationsList',
+    title: 'features/Article/ArticleRecommendationsList',
     component: ArticleRecommendationsList,
     argTypes: {
         backgroundColor: { control: 'color' },
