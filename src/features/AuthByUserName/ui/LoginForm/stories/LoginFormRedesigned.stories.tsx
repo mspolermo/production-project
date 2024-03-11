@@ -5,7 +5,7 @@ import LoginForm from '../LoginForm';
 import { NewDesignDecorator } from '@/shared/config/storybook/NewDesignDecorator/NewDesignDecorator';
 
 export default {
-    title: 'features/LoginForm/Redesigned',
+    title: 'features/AuthByUsername/LoginForm/Redesigned',
     component: LoginForm,
     argTypes: {
         backgroundColor: { control: 'color' },
