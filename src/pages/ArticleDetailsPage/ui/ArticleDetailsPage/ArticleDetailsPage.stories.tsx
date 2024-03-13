@@ -7,6 +7,12 @@ import ArticleDetailsPage from './ArticleDetailsPage';
 
 export default {
     title: 'pages/ArticleDetailsPage/ArticleDetailsPage',
+    parameters: {
+        location: {
+        pathParams: { article: '1' },
+        },
+        routing: { path: '/article/:id' },
+    },
     component: ArticleDetailsPage,
     argTypes: {
         backgroundColor: { control: 'color' },
@@ -14,7 +20,7 @@ export default {
 } as ComponentMeta<typeof ArticleDetailsPage>;
 
 const Template: ComponentStory<typeof ArticleDetailsPage> = (args) => (
-    <ArticleDetailsPage {...args} />
+    <ArticleDetailsPage {...args} />               
 );
 
 const article: Article = {
