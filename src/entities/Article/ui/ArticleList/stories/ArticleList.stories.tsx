@@ -4,6 +4,7 @@ import { ComponentMeta, ComponentStory } from '@storybook/react';
 import { ArticleView } from '../../../model/consts/articleConsts';
 import { ArticleList } from '../ArticleList';
 import { Article } from '../../../model/types/article';
+import { RouterDecorator } from '@/shared/config/storybook/RouterDecorator/RouterDecorator';
 
 export default {
     title: 'entities/Article/ArticleList/Deprecated',
@@ -107,6 +108,7 @@ LoadingSmall.args = {
 };
 
 export const ListSmall = Template.bind({});
+ListSmall.decorators= [RouterDecorator]
 ListSmall.args = {
     articles: new Array(9).fill(0).map((item, index) => ({
         ...article,
@@ -117,6 +119,7 @@ ListSmall.args = {
 };
 
 export const ListBig = Template.bind({});
+ListBig.decorators= [RouterDecorator]
 ListBig.args = {
     articles: new Array(9).fill(0).map((item, index) => ({
         ...article,

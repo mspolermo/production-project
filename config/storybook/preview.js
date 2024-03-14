@@ -1,7 +1,6 @@
 import { addDecorator } from '@storybook/react';
 import { StyleDecorator } from '../../src/shared/config/storybook/StyleDecorator/StyleDecorator';
 import { ThemeDecorator } from '../../src/shared/config/storybook/ThemeDecorator/ThemeDecorator';
-import { RouterDecorator } from '../../src/shared/config/storybook/RouterDecorator/RouterDecorator';
 import { SuspenseDecorator } from '../../src/shared/config/storybook/SuspenseDecorator/SuspenseDecorator';
 import { FeaturesFlagsDecorator } from '../../src/shared/config/storybook/FeaturesFlagsDecorator/FeaturesFlagsDecorator';
 import { Theme } from '../../src/shared/const/theme';
@@ -27,6 +26,5 @@ export const parameters = {
 
 addDecorator(StyleDecorator);
 addDecorator(ThemeDecorator(Theme.LIGHT));
-addDecorator(RouterDecorator);
 addDecorator(SuspenseDecorator);
 addDecorator(FeaturesFlagsDecorator({}))

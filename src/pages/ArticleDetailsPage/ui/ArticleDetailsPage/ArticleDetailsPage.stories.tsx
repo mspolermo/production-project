@@ -1,26 +1,26 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
+import { MemoryRouter, Route, Routes } from 'react-router-dom';
 import { Article, ArticleBlockType, ArticleType } from '@/entities/Article';
 import { StoreDecorator } from '@/shared/config/storybook/StoreDecorator/StoreDecorator';
 import ArticleDetailsPage from './ArticleDetailsPage';
+import { NewDesignDecorator } from '@/shared/config/storybook/NewDesignDecorator/NewDesignDecorator';
 
 export default {
     title: 'pages/ArticleDetailsPage/ArticleDetailsPage',
-    parameters: {
-        location: {
-        pathParams: { article: '1' },
-        },
-        routing: { path: '/article/:id' },
-    },
     component: ArticleDetailsPage,
     argTypes: {
         backgroundColor: { control: 'color' },
-    },
+    }
 } as ComponentMeta<typeof ArticleDetailsPage>;
 
 const Template: ComponentStory<typeof ArticleDetailsPage> = (args) => (
-    <ArticleDetailsPage {...args} />               
+    <MemoryRouter initialEntries={['/articles/1']}>
+        <Routes>
+            <Route path="/articles/:id" element={<ArticleDetailsPage {...args} />} />
+        </Routes>
+    </MemoryRouter>             
 );
 
 const article: Article = {
@@ -33,7 +33,7 @@ const article: Article = {
     type: [ArticleType.IT],
     user: {
         id: '1',
-        username: 'Ulbi tv',
+        username: 'mspolermo',
     },
     blocks: [
         {
@@ -66,6 +66,17 @@ const article: Article = {
 export const Normal = Template.bind({});
 Normal.args = {};
 Normal.decorators = [
+    StoreDecorator({
+        articleDetails: {
+            data: article,
+        },
+    }),
+];
+
+export const NormalRedesigned = Template.bind({});
+NormalRedesigned.args = {};
+NormalRedesigned.decorators = [
+    NewDesignDecorator,
     StoreDecorator({
         articleDetails: {
             data: article,

@@ -14,16 +14,18 @@ interface ArticleAdditionalInfoProps {
     createdAt: string;
     views: number;
     onEdit: () => void;
+    onBack: () => void;
+    canEdit: boolean;
 }
 
 export const ArticleAdditionalInfo = memo(
     (props: ArticleAdditionalInfoProps) => {
-        const { className, author, createdAt, views, onEdit } = props;
+        const { className, author, createdAt, views, onEdit, canEdit, onBack } = props;
         const { t } = useTranslation();
 
         return (
             <VStack
-                gap="32"
+                gap="16"
                 className={classNames(cls.ArticleAdditionalInfo, {}, [
                     className,
                 ])}
@@ -33,7 +35,8 @@ export const ArticleAdditionalInfo = memo(
                     <Text text={author.username} bold />
                     <Text text={createdAt} />
                 </HStack>
-                <Button onClick={onEdit}>{t('Редактировать')}</Button>
+                {canEdit && <Button onClick={onEdit}>{t('Редактировать')}</Button>}
+                <Button onClick={onBack}>{t('Назад к списку')}</Button>
                 <Text text={t('{{count}} просмотров', { count: views })} />
             </VStack>
         );

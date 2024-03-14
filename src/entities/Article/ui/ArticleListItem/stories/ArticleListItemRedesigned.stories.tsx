@@ -5,6 +5,7 @@ import { ArticleView } from '../../../model/consts/articleConsts';
 import { ArticleListItem } from '../ArticleListItem';
 import { Article } from '../../../model/types/article';
 import { NewDesignDecorator } from '@/shared/config/storybook/NewDesignDecorator/NewDesignDecorator';
+import { RouterDecorator } from '@/shared/config/storybook/RouterDecorator/RouterDecorator';
 
 export default {
     title: 'entities/Article/ArticleListItem/Redesigned',
@@ -12,6 +13,7 @@ export default {
     argTypes: {
         backgroundColor: { control: 'color' },
     },
+    decorators: [RouterDecorator]
 } as ComponentMeta<typeof ArticleListItem>;
 
 const Template: ComponentStory<typeof ArticleListItem> = (args) => (

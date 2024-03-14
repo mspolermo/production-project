@@ -2,6 +2,7 @@ import { ComponentMeta, ComponentStory } from '@storybook/react';
 import { StoreDecorator } from '@/shared/config/storybook/StoreDecorator/StoreDecorator';
 import { NewDesignDecorator } from '@/shared/config/storybook/NewDesignDecorator/NewDesignDecorator';
 import { AdditionalInfoContainer } from './AdditionalInfoContainer';
+import { RouterDecorator } from '@/shared/config/storybook/RouterDecorator/RouterDecorator';
 
 export default {
     title: 'pages/ArticleDetailsPage/AdditionalInfoContainer',
@@ -9,20 +10,22 @@ export default {
     argTypes: {
         backgroundColor: { control: 'color' },
     },
-    decorators: [StoreDecorator(
-        {
-            articleDetails: {
-                data: {
-                    views: 3123,
-                    createdAt: '12/12/12',
-                    user: {
-                        id: '0',
-                        username: 'admin',
-                        avatar: ''
+    decorators: [
+        RouterDecorator,
+        StoreDecorator(
+            {
+                articleDetails: {
+                    data: {
+                        views: 3123,
+                        createdAt: '12/12/12',
+                        user: {
+                            id: '0',
+                            username: 'admin',
+                            avatar: ''
+                        }
                     }
                 }
             }
-        }
     )],
 } as ComponentMeta<typeof AdditionalInfoContainer>;
 

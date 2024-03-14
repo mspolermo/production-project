@@ -4,9 +4,6 @@ import { Country } from '@/entities/Country';
 import { Currency } from '@/entities/Currency';
 import avatar from '@/shared/assets/test/storybook.jpg';
 import { ProfileCard } from '../ProfileCard';
-import { NewDesignDecorator } from '@/shared/config/storybook/NewDesignDecorator/NewDesignDecorator';
-import { ThemeDecorator } from '@/shared/config/storybook/ThemeDecorator/ThemeDecorator';
-import { Theme } from '@/shared/const/theme';
 
 export default {
     title: 'entities/ProfileCard/Depricated',
