@@ -23,4 +23,4 @@ Normal.args = {};
 
 export const NormalRedesigned = Template.bind({});
 NormalRedesigned.args = {};
-NormalRedesigned.decorators = [NewDesignDecorator]
+NormalRedesigned.decorators = [NewDesignDecorator, StoreDecorator({})]
