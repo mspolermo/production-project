@@ -1,20 +1,20 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import { Page } from './Page';
 import { StoreDecorator } from '@/shared/config/storybook/StoreDecorator/StoreDecorator';
 import { RouterDecorator } from '@/shared/config/storybook/RouterDecorator/RouterDecorator';
+import { ScrollToolbar } from './ScrollToolbar';
 
 export default {
-    title: 'widgets/Page',
-    component: Page,
+    title: 'widgets/ScrollToolbar',
+    component: ScrollToolbar,
     argTypes: {
         backgroundColor: { control: 'color' },
     },
     decorators: [StoreDecorator({}), RouterDecorator]
-} as ComponentMeta<typeof Page>;
+} as ComponentMeta<typeof ScrollToolbar>;
 
-const Template: ComponentStory<typeof Page> = (args) => <Page {...args} />;
+const Template: ComponentStory<typeof ScrollToolbar> = (args) => <ScrollToolbar {...args} />;
 
 export const Normal = Template.bind({});
 Normal.args = {};
