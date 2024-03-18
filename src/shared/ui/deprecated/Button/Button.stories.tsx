@@ -5,7 +5,7 @@ import { Theme } from '@/shared/const/theme';
 import { Button, ButtonTheme, ButtonSize } from './Button';
 
 export default {
-    title: 'shared/Button',
+    title: 'shared/Button/Deprecated',
     component: Button,
     argTypes: {
         backgroundColor: { control: 'color' },
@@ -44,19 +44,11 @@ OutlineSizeL.args = {
     size: ButtonSize.L,
 };
 
-export const OutlineSizeXL = Template.bind({});
-OutlineSizeXL.args = {
+export const OutlineRed = Template.bind({});
+OutlineRed.args = {
     children: 'Text',
-    theme: ButtonTheme.OUTLINE,
-    size: ButtonSize.XL,
+    theme: ButtonTheme.OUTLINE_RED,
 };
-
-export const OutlineDark = Template.bind({});
-OutlineDark.args = {
-    children: 'Text',
-    theme: ButtonTheme.OUTLINE,
-};
-OutlineDark.decorators = [ThemeDecorator(Theme.DARK)];
 
 export const BackgroundTheme = Template.bind({});
 BackgroundTheme.args = {
@@ -64,8 +56,8 @@ BackgroundTheme.args = {
     theme: ButtonTheme.BACKGROUND,
 };
 
-export const BackgroundInverted = Template.bind({});
-BackgroundInverted.args = {
+export const BackgroundInvertedTheme = Template.bind({});
+BackgroundInvertedTheme.args = {
     children: 'Text',
     theme: ButtonTheme.BACKGROUND_INVERTED,
 };

@@ -1,10 +1,10 @@
 import React from 'react';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
-import { Card } from './Card';
+import { Card, CardTheme } from './Card';
 import { Text } from '../Text/Text';
 
 export default {
-    title: 'shared/Card',
+    title: 'shared/Card/Deprecated',
     component: Card,
     argTypes: {
         backgroundColor: { control: 'color' },
@@ -13,7 +13,14 @@ export default {
 
 const Template: ComponentStory<typeof Card> = (args) => <Card {...args} />;
 
-export const Primary = Template.bind({});
-Primary.args = {
+export const Normal = Template.bind({});
+Normal.args = {
     children: <Text title="test" text="text text" />,
+    theme: CardTheme.NORMAL,
+};
+
+export const Outlined = Template.bind({});
+Outlined.args = {
+    children: <Text title="test" text="text text" />,
+    theme: CardTheme.OUTLINED,
 };
