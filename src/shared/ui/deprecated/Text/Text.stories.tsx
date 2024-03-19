@@ -2,10 +2,10 @@ import React from 'react';
 import type { ComponentMeta, ComponentStory } from '@storybook/react';
 import { ThemeDecorator } from '@/shared/config/storybook/ThemeDecorator/ThemeDecorator';
 import { Theme } from '@/shared/const/theme';
-import { Text, TextSize, TextTheme } from './Text';
+import { Text, TextAlign, TextSize, TextTheme } from './Text';
 
 export default {
-    title: 'shared/Text',
+    title: 'shared/Text/Deprecated',
     component: Text,
     argTypes: {
         backgroundColor: { control: 'color' },
@@ -19,6 +19,28 @@ Primary.args = {
     title: 'Title lorem ipsum',
     text: 'Description description description description',
 };
+
+export const PrimaryCenter = Template.bind({});
+PrimaryCenter.args = {
+    title: 'Title lorem ipsum',
+    text: 'Description description description description',
+    align: TextAlign.CENTER
+};
+
+export const PrimaryRight = Template.bind({});
+PrimaryRight.args = {
+    title: 'Title lorem ipsum',
+    text: 'Description description description description',
+    align: TextAlign.RIGHT
+};
+
+export const Inverted = Template.bind({});
+Inverted.args = {
+    title: 'Title lorem ipsum',
+    text: 'Description description description description',
+    theme: TextTheme.INVERTED,
+};
+
 
 export const Error = Template.bind({});
 Error.args = {
@@ -36,25 +58,6 @@ export const onlyText = Template.bind({});
 onlyText.args = {
     text: 'Description description description description',
 };
-
-export const PrimaryDark = Template.bind({});
-PrimaryDark.args = {
-    title: 'Title lorem ipsum',
-    text: 'Description description description description',
-};
-PrimaryDark.decorators = [ThemeDecorator(Theme.DARK)];
-
-export const onlyTitleDark = Template.bind({});
-onlyTitleDark.args = {
-    title: 'Title lorem ipsum',
-};
-onlyTitleDark.decorators = [ThemeDecorator(Theme.DARK)];
-
-export const onlyTextDark = Template.bind({});
-onlyTextDark.args = {
-    text: 'Description description description description',
-};
-onlyTextDark.decorators = [ThemeDecorator(Theme.DARK)];
 
 export const SizeL = Template.bind({});
 SizeL.args = {

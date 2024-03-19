@@ -3,7 +3,7 @@ import { ComponentMeta, ComponentStory } from '@storybook/react';
 import { ListBox } from './ListBox';
 
 export default {
-    title: 'shared/ListBox',
+    title: 'shared/ListBox/Deprecated',
     component: ListBox,
     argTypes: {
         backgroundColor: { control: 'color' },
