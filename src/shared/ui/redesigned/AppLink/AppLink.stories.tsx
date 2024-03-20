@@ -1,10 +1,11 @@
 import React from 'react';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
-import { AppLink, AppLinkTheme } from './AppLink';
+import { AppLink } from './AppLink';
 import { RouterDecorator } from '@/shared/config/storybook/RouterDecorator/RouterDecorator';
+import { NewDesignDecorator } from '@/shared/config/storybook/NewDesignDecorator/NewDesignDecorator';
 
 export default {
-    title: 'shared/AppLink/Deprecated',
+    title: 'shared/AppLink/Redesigned',
     component: AppLink,
     argTypes: {
         backgroundColor: { control: 'color' },
@@ -12,7 +13,7 @@ export default {
     args: {
         to: '/',
     },
-    decorators: [RouterDecorator]
+    decorators: [RouterDecorator, NewDesignDecorator]
 } as ComponentMeta<typeof AppLink>;
 
 const Template: ComponentStory<typeof AppLink> = (args) => (
@@ -22,18 +23,12 @@ const Template: ComponentStory<typeof AppLink> = (args) => (
 export const Primary = Template.bind({});
 Primary.args = {
     children: 'Text',
-    theme: AppLinkTheme.PRIMARY,
-};
-
-export const Secondary = Template.bind({});
-Secondary.args = {
-    children: 'Text',
-    theme: AppLinkTheme.SECONDARY,
+    variant: 'primary'
 };
 
 export const Red = Template.bind({});
 Red.args = {
     children: 'Text',
-    theme: AppLinkTheme.RED,
+    variant: 'red'
 };
 
