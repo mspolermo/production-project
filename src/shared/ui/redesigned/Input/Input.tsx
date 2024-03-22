@@ -11,6 +11,19 @@ import cls from './Input.module.scss';
 import { HStack } from '../Stack';
 import { Text } from '../Text';
 
+/**
+ * Текстовый инпут
+ * @param className - проброс класса сверху
+ * @param value - значение в инпуте
+ * @param onChange - функция, что делать по изменению
+ * @param label - подпись, к инпуту
+ * @param readonly - флаг, отвечающий за работу инпута
+ * @param size - размер инпута
+ * @param addonLeft - иконка слева
+ * @param addonRight - иконка справа
+ * @param autofocus - флаг, отвечающий за автофокусировку в инпут
+*/
+
 type HTMLInputProps = Omit<
     InputHTMLAttributes<HTMLInputElement>,
     'value' | 'onChange' | 'readOnly' | 'size'

@@ -4,6 +4,15 @@ import { Card } from '../Card/Card';
 import cls from './Tabs.module.scss';
 import { Flex, FlexDirection } from '../Stack/Flex/Flex';
 
+/**
+ * Компонент с табами (метками)
+ * @param className - проброс класса сверху
+ * @param tabs - массив меток
+ * @param value - выбранная метка
+ * @param onTabClick - функция по выбору метки
+ * @param direction - направление табов (говризонтальное \ вертикальное)
+*/
+
 export interface TabItem {
     value: string;
     content: ReactNode;

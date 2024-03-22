@@ -21,6 +21,16 @@ interface SelectProps<T extends string> {
  * @deprecated
  */
 
+/**
+ * Выпадающий список с вариантами
+ * @param className - проброс класса сверху
+ * @param label - подпись к выпадающему списку
+ * @param options - варианты выпадающего списка
+ * @param value - выбранный вариант
+ * @param onChange - функция по изменению
+ * @param readonly - флаг доступности только для чтения
+*/
+
 export const Select = <T extends string>(props: SelectProps<T>) => {
     const { className, label, options, value, onChange, readonly } = props;
 

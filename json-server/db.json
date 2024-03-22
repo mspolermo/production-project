@@ -883,6 +883,12 @@
       "userId": "1",
       "text": "jhkjjhljli",
       "id": "0WP5czz"
+    },
+    {
+      "articleId": "3",
+      "userId": "1",
+      "text": "sdrser",
+      "id": "c29KRqG"
     }
   ],
   "users": [
@@ -900,7 +906,7 @@
       },
       "jsonSettings": {
         "isArticlePageWasOpened": true,
-        "theme": "app_orange_theme"
+        "theme": "app_light_theme"
       },
       "avatar": "https://img2.reactor.cc/pics/post/full/Bebop-Bebop-and-Rocksteady-TMNT-%D1%84%D1%8D%D0%BD%D0%B4%D0%BE%D0%BC%D1%8B-5457666.jpeg"
     },
@@ -964,7 +970,7 @@
   "profile": [
     {
       "id": "1",
-      "first": "Алекс7",
+      "first": "Алекс75",
       "lastname": "Медведев",
       "age": 29,
       "city": "Екатеринбург",

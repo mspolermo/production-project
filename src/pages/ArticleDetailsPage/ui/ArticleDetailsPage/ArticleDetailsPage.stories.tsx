@@ -67,19 +67,66 @@ export const Normal = Template.bind({});
 Normal.args = {};
 Normal.decorators = [
     StoreDecorator({
+        user: {
+            authData: { id: '1' },
+        },
         articleDetails: {
             data: article,
         },
     }),
 ];
+Normal.parameters = {
+    mockData: [
+        {
+            url: `${__API__}/article-ratings?userId=1&articleId=1`,
+            method: 'GET',
+            status: 200,
+            response: [],
+        },
+        {
+            url: `${__API__}/articles?_limit=3&_expand=user`,
+            method: 'GET',
+            status: 200,
+            response: [
+                { ...article, id: '1' },
+                { ...article, id: '2' },
+                { ...article, id: '3' },
+            ],
+        },
+    ],
+};
 
 export const NormalRedesigned = Template.bind({});
 NormalRedesigned.args = {};
 NormalRedesigned.decorators = [
     NewDesignDecorator,
     StoreDecorator({
+        user: {
+            authData: { id: '1' },
+        },
         articleDetails: {
             data: article,
         },
+        
     }),
 ];
+NormalRedesigned.parameters = {
+    mockData: [
+        {
+            url: `${__API__}/article-ratings?userId=1&articleId=1`,
+            method: 'GET',
+            status: 200,
+            response: [],
+        },
+        {
+            url: `${__API__}/articles?_limit=3&_expand=user`,
+            method: 'GET',
+            status: 200,
+            response: [
+                { ...article, id: '1' },
+                { ...article, id: '2' },
+                { ...article, id: '3' },
+            ],
+        },
+    ],
+};

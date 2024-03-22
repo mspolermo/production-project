@@ -13,6 +13,13 @@ interface IconProps extends React.SVGProps<SVGSVGElement> {
  * @deprecated
  */
 
+/**
+ * Компонент для добавления иконок/ иконок как кнопок с действием
+ * @param className - проброс класса сверху
+ * @param Svg - ипортированная иконка
+ * @param inverted - инверсия цветов
+*/
+
 export const Icon = memo((props: IconProps) => {
     const { className, Svg, inverted, ...otherProps } = props;
 

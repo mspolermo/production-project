@@ -26,6 +26,14 @@ interface DropdownProps {
  * @deprecated
  */
 
+/**
+ * Выпадающий список с действиями из триггера (например иконки)
+ * @param className - проброс класса сверху
+ * @param items - массив элементов выпадающего списка
+ * @param trigger - родительский компонент, по нажатию на который будет выпадать список
+ * @param direction - местоположение выпадающего списка
+*/
+
 export function Dropdown(props: DropdownProps) {
     const { className, trigger, items, direction = 'bottom right' } = props;
 

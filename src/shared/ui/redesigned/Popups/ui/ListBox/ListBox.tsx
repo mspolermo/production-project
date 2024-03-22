@@ -10,6 +10,18 @@ import popupCls from '../../styles/popup.module.scss';
 import ArrowIcon from '@/shared/assets/icons/arrow-bottom.svg';
 import { Icon } from '../../../Icon';
 
+/**
+ * Выпадающий список с данными для выбора из кнопки
+ * @param className - проброс класса сверху
+ * @param items - массив элементов выпадающего списка
+ * @param value - выбранное значение
+ * @param defaultValue - значение по умолчанию
+ * @param onChange - функция, что делать по выбору
+ * @param readonly - флаг, разрешён ли выбор
+ * @param direction - местоположение выпадающего списка
+ * @param label - подпись перед кнопкой
+*/
+
 export interface ListBoxItem<T extends string> {
     value: string;
     content: ReactNode;

@@ -18,6 +18,14 @@ interface PopoverProps {
  * @deprecated
  */
 
+/**
+ * Выпадающий список без действий из триггера (например иконки)
+ * @param className - проброс класса сверху
+ * @param trigger - родительский компонент, по нажатию на который будет выпадать список
+ * @param direction - местоположение выпадающего списка
+ * @param children - массив элементов выпадающего списка
+*/
+
 export function Popover(props: PopoverProps) {
     const { className, trigger, children, direction = 'bottom right' } = props;
 

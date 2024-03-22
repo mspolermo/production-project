@@ -7,6 +7,14 @@ import { AppLink } from '../../../AppLink/AppLink';
 import { mapDirectionClass } from '../../styles/consts';
 import popupCls from '../../styles/popup.module.scss';
 
+/**
+ * Выпадающий список с действиями из триггера (например иконки)
+ * @param className - проброс класса сверху
+ * @param items - массив элементов выпадающего списка
+ * @param trigger - родительский компонент, по нажатию на который будет выпадать список
+ * @param direction - местоположение выпадающего списка
+*/
+
 export interface DropdownItem {
     disabled?: boolean;
     content?: ReactNode;

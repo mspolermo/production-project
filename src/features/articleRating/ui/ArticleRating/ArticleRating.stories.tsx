@@ -84,7 +84,7 @@ WithoutRate.parameters = {
 };
 
 export const WithoutRateRedesigned = Template.bind({});
-WithoutRate.args = {
+WithoutRateRedesigned.args = {
     articleId: '1',
 };
 WithoutRateRedesigned.decorators = [

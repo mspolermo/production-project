@@ -11,6 +11,11 @@ interface LoaderProps {
  * @deprecated
  */
 
+/**
+ * Анимированный лоадер
+ * @param className - проброс класса сверху
+*/
+
 export const Loader = ({ className }: LoaderProps) => (
     <div className={classNames('lds-ellipsis', {}, [className])}>
         <div />

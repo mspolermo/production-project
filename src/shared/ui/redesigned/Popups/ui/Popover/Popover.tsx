@@ -6,6 +6,14 @@ import cls from './Popover.module.scss';
 import { mapDirectionClass } from '../../styles/consts';
 import popupCls from '../../styles/popup.module.scss';
 
+/**
+ * Выпадающий список без действий из триггера (например иконки)
+ * @param className - проброс класса сверху
+ * @param trigger - родительский компонент, по нажатию на который будет выпадать список
+ * @param direction - местоположение выпадающего списка
+ * @param children - массив элементов выпадающего списка
+*/
+
 interface PopoverProps {
     className?: string;
     trigger: ReactNode;

@@ -2,6 +2,14 @@ import React, { CSSProperties, memo } from 'react';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import cls from './Skeleton.module.scss';
 
+/**
+ * Скелетон (для загрузок)
+ * @param className - проброс класса сверху
+ * @param height - высота
+ * @param width - ширина
+ * @param border - сглаживание углов
+*/
+
 interface SkeletonProps {
     className?: string;
     height?: string | number;

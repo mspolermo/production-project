@@ -30,6 +30,18 @@ interface ListBoxProps {
  * @deprecated
  */
 
+/**
+ * Выпадающий список с данными для выбора из кнопки
+ * @param className - проброс класса сверху
+ * @param items - массив элементов выпадающего списка
+ * @param value - выбранное значение
+ * @param defaultValue - значение по умолчанию
+ * @param onChange - функция, что делать по выбору
+ * @param readonly - флаг, разрешён ли выбор
+ * @param direction - местоположение выпадающего списка
+ * @param label - подпись перед кнопкой
+*/
+
 export const ListBox = (props: ListBoxProps) => {
     const {
         className,

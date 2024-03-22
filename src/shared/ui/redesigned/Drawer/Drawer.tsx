@@ -10,6 +10,15 @@ import { Portal } from '../Portal/Portal';
 import { useTheme } from '@/shared/lib/hooks/useTheme/useTheme';
 import { toggleFeatures } from '@/shared/lib/features';
 
+/**
+ * Компонент-обертка для добавления выезжаешего окна (снизу, для мобильных устройств)
+ * @param className - проброс класса сверху
+ * @param children - содержимое окна
+ * @param isOpen - открыто-ли?
+ * @param onClose - функция для закрытия
+ * @param lazy - ленивая загрузка
+*/
+
 interface DrawerProps {
     className?: string;
     children: ReactNode;

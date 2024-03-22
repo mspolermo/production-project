@@ -7,6 +7,15 @@ import cls from './Modal.module.scss';
 import { useTheme } from '@/shared/lib/hooks/useTheme/useTheme';
 import { toggleFeatures } from '@/shared/lib/features';
 
+/**
+ * Компонент-обертка для добавления модального окна
+ * @param className - проброс класса сверху
+ * @param children - содержимое модального окна
+ * @param isOpen - открыто-ли?
+ * @param onClose - функция для закрытия
+ * @param lazy - ленивая загрузка
+*/
+
 interface ModalProps {
     className?: string;
     children?: ReactNode;

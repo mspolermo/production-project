@@ -12,6 +12,12 @@ interface CodeProps {
     text: string;
 }
 
+/**
+ * Компонент для отображения кода
+ * @param className - проброс класса сверху
+ * @param text - тело кода
+*/
+
 export const Code = memo((props: CodeProps) => {
     const { className, text } = props;
 

@@ -2,6 +2,17 @@ import { memo } from 'react';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import cls from './Text.module.scss';
 
+/**
+ * Компонент для вставки текста
+ * @param className - проброс класса сверху
+ * @param title - заголовок 
+ * @param text - тело текста
+ * @param variant - Тема текста. Отвечает за визуал
+ * @param align - выравнивание
+ * @param size - Размер текста в соответствии с дизайн системой
+ * @param bold - жирный (true\false)
+*/
+
 export type TextVariant = 'primary' | 'error' | 'accent';
 
 export type TextAlign = 'right' | 'left' | 'center';

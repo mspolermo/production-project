@@ -6,6 +6,16 @@ import React, {
     useState,
 } from 'react';
 
+/**
+ * Компонент с отображением изображения
+ * @param className - проброс класса сверху
+ * @param src - источник изображения
+ * @param alt - подпись к изображению (если отсутствует)
+ * @param fallback 
+ * @param errorFallback 
+*/
+
+
 interface AppImageProps extends ImgHTMLAttributes<HTMLImageElement> {
     className?: string;
     fallback?: ReactElement;

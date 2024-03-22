@@ -26,6 +26,15 @@ interface InputProps extends HTMLInputProps {
  * @deprecated
  */
 
+/**
+ * Текстовый инпут
+ * @param className - проброс класса сверху
+ * @param value - значение в инпуте
+ * @param onChange - функция, что делать по изменению
+ * @param readonly - флаг, отвечающий за работу инпута
+ * @param autofocus - флаг, отвечающий за автофокусировку в инпут
+*/
+
 export const Input = memo((props: InputProps) => {
     const {
         className,

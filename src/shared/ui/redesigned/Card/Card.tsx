@@ -18,6 +18,18 @@ interface CardProps extends HTMLAttributes<HTMLDivElement> {
     fullHeight?: boolean;
 }
 
+/**
+ * Карточка
+ * @param className - проброс класса сверху
+ * @param children - Содержимое карточки
+ * @param variant - Тема карточки. Отвечает за визуал
+ * @param max - Флаг, делающий карту максимальной ширины
+ * @param padding - Размер внутренних отступов
+ * @param border - Округление углов
+ * @param fullWidth - Флаг, делающий карту максимальной ширины
+ * @param fullHeight - Флаг, делающий карту максимальной высоты
+*/
+
 const mapPaddingToClass: Record<CardPadding, string> = {
     '0': 'gap_0',
     '8': 'gap_8',

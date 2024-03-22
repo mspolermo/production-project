@@ -12,6 +12,15 @@ interface AppLinkProps extends LinkProps {
     activeClassName?: string;
 }
 
+/**
+ * Компонент для создания ссылки в приложении
+ * @param className - проброс класса сверху
+ * @param variant - вариант ссылки
+ * @param to - куда ведет
+ * @param children - тело ссылки
+ * @param activeClassName - выбранная ссылка (типо где сейчас находимся)
+*/
+
 export const AppLink = memo((props: AppLinkProps) => {
     const {
         to,

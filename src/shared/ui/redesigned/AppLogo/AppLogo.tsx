@@ -4,6 +4,13 @@ import { HStack } from '../Stack';
 import AppSvg from '@/shared/assets/icons/app-image.svg';
 import { classNames } from '@/shared/lib/classNames/classNames';
 
+/**
+ * Компонент с аватаром приложения
+ * @param className - проброс класса сверху
+ * @param size - размер изображения
+*/
+
+
 interface AppLogoProps {
     className?: string;
     size?: number;

@@ -43,6 +43,16 @@ const mapSizeToHeader: Record<TextSize, HeaderTagType> = {
  * @deprecated
  */
 
+/**
+ * Компонент для вставки текста
+ * @param className - проброс класса сверху
+ * @param title - заголовок 
+ * @param text - тело текста
+ * @param theme - Тема текста. Отвечает за визуал
+ * @param align - выравнивание
+ * @param size - Размер текста в соответствии с дизайн системой
+*/
+
 export const Text = memo((props: TextProps) => {
     const {
         className,

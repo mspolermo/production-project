@@ -20,6 +20,14 @@ interface AppLinkProps extends LinkProps {
  * @deprecated
  */
 
+/**
+ * Компонент для создания ссылки в приложении
+ * @param className - проброс класса сверху
+ * @param theme - вариант ссылки
+ * @param to - куда ведет
+ * @param children - тело ссылки
+*/
+
 export const AppLink = memo((props: AppLinkProps) => {
     const {
         to,

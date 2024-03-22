@@ -19,6 +19,15 @@ interface AvatarProps {
  * @deprecated
  */
 
+/**
+ * Компонент с аватаром пользователя
+ * @param className - проброс класса сверху
+ * @param src - источник изображения
+ * @param size - размер изображения
+ * @param alt - подпись к изображению (если отсутствует)
+ * @param fallbackInverted - инверсия цвета
+*/
+
 export const Avatar = ({
     className,
     src,

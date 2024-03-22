@@ -19,6 +19,14 @@ interface CardProps extends HTMLAttributes<HTMLDivElement> {
  * @deprecated
  */
 
+/**
+ * Карточка
+ * @param className - проброс класса сверху
+ * @param children - Содержимое карточки
+ * @param theme - Тема карточки. Отвечает за визуал
+ * @param max - Флаг, делающий карту максимальной ширины
+*/
+
 export const Card = memo((props: CardProps) => {
     const {
         className,

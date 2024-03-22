@@ -20,6 +20,15 @@ interface TabsProps {
  * @deprecated
  */
 
+/**
+ * Компонент с табами (метками)
+ * @param className - проброс класса сверху
+ * @param tabs - массив меток
+ * @param value - выбранная метка
+ * @param onTabClick - функция по выбору метки
+*/
+
+
 export const Tabs = memo((props: TabsProps) => {
     const { className, tabs, value, onTabClick } = props;
 

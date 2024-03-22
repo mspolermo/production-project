@@ -33,10 +33,17 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
      * Увеличивает кнопку на всю свободную ширину
      */
     fullWidth?: boolean;
-
+    /**
+     * Цвет кнопки
+     */
     color?: ButtonColor;
-
+    /**
+     * Добавить иконку слева
+     */
     addonLeft?: ReactNode;
+    /**
+     * Добавить иконку справа
+     */
     addonRight?: ReactNode;
 }
 

@@ -6,6 +6,14 @@ import StarIcon from '@/shared/assets/icons/star.svg';
 import { toggleFeatures, ToggleFeatures } from '@/shared/lib/features';
 import { Icon } from '../Icon';
 
+/**
+ * Компонент для отображения рейтинга к статье
+ * @param className - проброс класса сверху
+ * @param onSelect - действие по выбору рейтинга (например отправка на сервер)
+ * @param size - размер
+ * @param selectedStars - выбранный ранее рейтинг (1-5)
+*/
+
 interface StarRatingProps {
     className?: string;
     onSelect?: (starsCount: number) => void;

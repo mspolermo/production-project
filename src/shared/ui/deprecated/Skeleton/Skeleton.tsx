@@ -14,6 +14,14 @@ interface SkeletonProps {
  * @deprecated
  */
 
+/**
+ * Скелетон (для загрузок)
+ * @param className - проброс класса сверху
+ * @param height - высота
+ * @param width - ширина
+ * @param border - сглаживание углов
+*/
+
 export const Skeleton = memo((props: SkeletonProps) => {
     const { className, height, width, border } = props;
 

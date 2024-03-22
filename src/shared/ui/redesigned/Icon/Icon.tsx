@@ -2,6 +2,14 @@ import React, { memo } from 'react';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import cls from './Icon.module.scss';
 
+/**
+ * Компонент для добавления иконок/ иконок как кнопок с действием
+ * @param className - проброс класса сверху
+ * @param Svg - ипортированная иконка
+ * @param clickable - иконка-кнопка?
+ * @param onClick -выполняемая функция для иконки-кнопки
+*/
+
 type SvgProps = Omit<React.SVGProps<SVGSVGElement>, 'onClick'>
 
 interface IconBaseProps extends SvgProps {

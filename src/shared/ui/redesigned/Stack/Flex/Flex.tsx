@@ -2,6 +2,8 @@ import { DetailedHTMLProps, HTMLAttributes, ReactNode } from 'react';
 import { classNames, Mods } from '@/shared/lib/classNames/classNames';
 import cls from './Flex.module.scss';
 
+// файл-база для комонентов HStack и VStack, не экспортируется наружу
+
 export type FlexJustify = 'start' | 'center' | 'end' | 'between';
 export type FlexAlign = 'start' | 'center' | 'end';
 export type FlexDirection = 'row' | 'column';
