@@ -5,7 +5,7 @@ import { StoreDecorator } from '@/shared/config/storybook/StoreDecorator/StoreDe
 import ArticlesPage from './ArticlesPage';
 import { RouterDecorator } from '@/shared/config/storybook/RouterDecorator/RouterDecorator';
 import { NewDesignDecorator } from '@/shared/config/storybook/NewDesignDecorator/NewDesignDecorator';
-import { Article, ArticleBlockType, ArticleType } from '@/entities/Article';
+import { Article, ArticleBlockType, ArticleSortField, ArticleType, ArticleView } from '@/entities/Article';
 
 const articles = [
     {
@@ -234,8 +234,11 @@ export const Normal = Template.bind({});
 Normal.args = {};
 
 export const NormalRedesigned = Template.bind({});
-NormalRedesigned.args = {};
-NormalRedesigned.decorators = [NewDesignDecorator]
+NormalRedesigned.args = {
+};
+NormalRedesigned.decorators = [
+    NewDesignDecorator
+]
 NormalRedesigned.parameters = {
     mockData: [
         {

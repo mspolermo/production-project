@@ -25,7 +25,7 @@ export const ArticleInfiniteList = memo((props: ArticleInfiniteListProps) => {
     if (error) {
         return <Text text={t('Ошибка при загрузке статей')} />;
     }
-
+console.log(view)
     return (
         <ArticleList
             isLoading={isLoading}
