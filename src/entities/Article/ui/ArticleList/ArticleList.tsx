@@ -38,7 +38,7 @@ export const ArticleList = memo((props: ArticleListProps) => {
         isLoading,
         target,
     } = props;
-    const { t } = useTranslation();
+    const { t } = useTranslation('article');
 
     if (!isLoading && !articles.length) {
         return (
@@ -46,14 +46,19 @@ export const ArticleList = memo((props: ArticleListProps) => {
                 className={classNames(cls.ArticleList, {}, [
                     className,
                     cls[view],
-                    cls.NotFound
+                    cls.NotFound,
                 ])}
             >
-                <VStack max align='center' justify='center'>
+                <VStack max align="center" justify="center">
                     <ToggleFeatures
                         feature="isAppRedesigned"
-                        on={<Text size='l' title={t('Статьи не найдены')} />}
-                        off={<TextDepricated size={TextSize.L} title={t('Статьи не найдены')} />}
+                        on={<Text size="l" title={t('Статьи не найдены')} />}
+                        off={
+                            <TextDepricated
+                                size={TextSize.L}
+                                title={t('Статьи не найдены')}
+                            />
+                        }
                     />
                 </VStack>
             </div>

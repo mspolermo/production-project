@@ -11,7 +11,7 @@ import { Skeleton } from '@/shared/ui/redesigned/Skeleton';
 import { Text } from '@/shared/ui/redesigned/Text';
 
 export const ProfileCardRedesignedError = () => {
-    const { t } = useTranslation();
+    const { t } = useTranslation('profile');
 
     return (
         <HStack justify="center" max>
@@ -69,7 +69,7 @@ export const ProfileCardRedesigned = memo((props: ProfileCardProps) => {
     const { t } = useTranslation('profile');
 
     return (
-        <Card padding="24" max className={className} border='partial'>
+        <Card padding="24" max className={className} border="partial">
             <VStack gap="32">
                 {data?.avatar && (
                     <HStack justify="center" max>

@@ -5,6 +5,7 @@
     "Читать далее": "Read more...",
     "Назад к списку": "Back to list",
     "Поиск": "Search",
+    "Сортировать по:": "Sort by",
     "Сортировать ПО": "Sort BY",
     "по": "by",
     "возрастанию": "ascending",
@@ -23,5 +24,9 @@
     "Редактировать": "Edit",
     "Ошибка при загрузке статей": "Error loading articles",
     "Оцените статью": "Rate this article",
-    "Оставьте свой отзыв о статье, это поможет улучшить качество": "Leave your feedback on the article, this will help improve the quality"
+    "Оставьте свой отзыв о статье, это поможет улучшить качество": "Leave your feedback on the article, this will help improve the quality",
+    "Читать далее...": "Read more..",
+    "{{count}} просмотров_zero": "{{count}} views",
+    "{{count}} просмотров_one": "{{count}} view",
+    "{{count}} просмотров_other": "{{count}} views"
 }

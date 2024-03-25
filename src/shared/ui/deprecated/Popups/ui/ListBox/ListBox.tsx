@@ -40,7 +40,7 @@ interface ListBoxProps {
  * @param readonly - флаг, разрешён ли выбор
  * @param direction - местоположение выпадающего списка
  * @param label - подпись перед кнопкой
-*/
+ */
 
 export const ListBox = (props: ListBoxProps) => {
     const {
@@ -58,7 +58,11 @@ export const ListBox = (props: ListBoxProps) => {
 
     return (
         <HStack gap="4">
-            {label && <span>{`${label}>`}</span>}
+            {label && (
+                <span
+                    className={classNames('', { [cls.readonly]: readonly }, [])}
+                >{`${label}>`}</span>
+            )}
             <HListBox
                 disabled={readonly}
                 as="div"

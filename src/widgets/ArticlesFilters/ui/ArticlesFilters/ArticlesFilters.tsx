@@ -36,7 +36,7 @@ export const ArticlesFilters = memo((props: ArticlesFiltersProps) => {
         order,
         type,
     } = props;
-    const { t } = useTranslation();
+    const { t } = useTranslation('article');
 
     return (
         <Card
@@ -45,7 +45,7 @@ export const ArticlesFilters = memo((props: ArticlesFiltersProps) => {
         >
             <VStack gap="32">
                 <Input
-                    size='s'
+                    size="s"
                     onChange={onChangeSearch}
                     value={search}
                     placeholder={t('Поиск')}

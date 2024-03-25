@@ -109,7 +109,7 @@ export const ProfileCardDeprecated = memo((props: ProfileCardProps) => {
             />
             <InputDeprecated
                 value={data?.username}
-                placeholder={t('Введите имя пользователя')}
+                placeholder={t('Введите никнейм')}
                 className={cls.input}
                 onChange={onChangeUsername}
                 readonly={readonly}

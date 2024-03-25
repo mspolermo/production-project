@@ -18,5 +18,10 @@
     "Некорректный регион": "Invalid region",
     "Имя и фамилия обязательны": "First and last name are required",
     "Данные не указаны": "Data not provided",
-    "Профиль не найден": "Profile not found"
+    "Профиль не найден": "Profile not found",
+    "Имя": "Name",
+    "Фамилия": "Surname",
+    "Возраст": "Age",
+    "Имя пользователя": "Nickname",
+    "Cсылка на аватар": "Avatar"
 }
