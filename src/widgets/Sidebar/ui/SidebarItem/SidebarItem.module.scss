@@ -1,6 +1,7 @@
 .item {
     display: flex;
     align-items: center;
+    margin-top: 20px;
 }
 
 .link {
@@ -10,6 +11,15 @@
 
 .icon {
     fill: var(--inverted-primary-color);
+    height: 24px;
+    width: 24px;
+    margin-left: 40px;
+}
+
+.iconCollapsed {
+    height: 40px;
+    width: 40px;
+    margin-left: 20px;
 }
 
 .collapsed {
