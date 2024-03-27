@@ -1,3 +1,8 @@
 {
-    "Главная страница": "Main page"
+    "Главная страница": "Main page",
+    "Описание": "The project is a platform that brings together articles on various topics. Access to all sections of the site requires authentication using one of the pre-created accounts. Users have different roles and functionality depending on their access level.",
+    "Учетные записи:": "Accounts:",
+    "Роль администратора": "Role - `Administrator`. Username: `admin`. Password: `123`.",
+    "Роль пользователя": "Role - `User`. Username:`user`. Password:`123`.",
+    "Роль менеджера": "Role - `Manager`. Username:`manager`. Password: `123`."
 }

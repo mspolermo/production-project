@@ -10,16 +10,18 @@ import { Icon } from '../Icon';
 interface CodeProps {
     className?: string;
     text: string;
+    max?: boolean;
 }
 
 /**
  * Компонент для отображения кода
  * @param className - проброс класса сверху
  * @param text - тело кода
-*/
+ * @param max - занять максимальную ширину
+ */
 
 export const Code = memo((props: CodeProps) => {
-    const { className, text } = props;
+    const { className, text, max } = props;
 
     const onCopy = useCallback(() => {
         navigator.clipboard.writeText(text);
@@ -30,7 +32,11 @@ export const Code = memo((props: CodeProps) => {
             feature="isAppRedesigned"
             on={
                 <pre
-                    className={classNames(cls.CodeRedesigned, {}, [className])}
+                    className={classNames(
+                        cls.CodeRedesigned,
+                        { [cls.maxWidth]: max },
+                        [className],
+                    )}
                 >
                     <Icon
                         clickable
@@ -42,7 +48,11 @@ export const Code = memo((props: CodeProps) => {
                 </pre>
             }
             off={
-                <pre className={classNames(cls.Code, {}, [className])}>
+                <pre
+                    className={classNames(cls.Code, { [cls.maxWidth]: max }, [
+                        className,
+                    ])}
+                >
                     <Button
                         onClick={onCopy}
                         className={cls.copyBtn}
