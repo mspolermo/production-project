@@ -43,17 +43,7 @@ export const useSidebarItems = () => {
     ];
 
     if (userData) {
-        sidebarItemsList.push(
-            {
-                path: getRouteProfile(userData.id),
-                Icon: toggleFeatures({
-                    name: 'isAppRedesigned',
-                    off: () => ProfileIconDeprecated,
-                    on: () => ProfileIcon,
-                }),
-                text: 'Профиль',
-                authOnly: true,
-            },
+        const userItems: SidebarItemType[] = [
             {
                 path: getRouteArticles(),
                 Icon: toggleFeatures({
@@ -64,7 +54,22 @@ export const useSidebarItems = () => {
                 text: 'Статьи',
                 authOnly: true,
             },
-        );
+            {
+                path: getRouteProfile(userData.id),
+                Icon: toggleFeatures({
+                    name: 'isAppRedesigned',
+                    off: () => ProfileIconDeprecated,
+                    on: () => ProfileIcon,
+                }),
+                text: 'Профиль',
+                authOnly: true,
+            },
+        ];
+
+        const index =
+            sidebarItemsList.findIndex((item) => item.path === getRouteMain()) +
+            1;
+        sidebarItemsList.splice(index, 0, ...userItems);
     }
 
     return sidebarItemsList;

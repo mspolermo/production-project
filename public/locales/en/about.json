@@ -1,3 +1,6 @@
 {
-    "О сайте": "About us"
+    "О сайте": "About",
+    "Описание": "The site is presented in two versions: classic and updated, each with its own unique style and functionality. Users can easily switch between these versions in the settings section. Each version offers three different color themes (light, dark and orange) so that users can choose the most suitable option according to their preferences and mood. This makes the user experience more personalized and comfortable.",
+    "Мультиязычность": "This site provides multilingual functionality, allowing users to choose the interface language between Russian and English. This is especially convenient for those who prefer to use a specific language to view content. All these functions are controlled through an intuitive sidebar, making site navigation convenient and simple.",
+    "Дополнение": "In addition, both versions of the site provide integrated authentication capabilities that allow users to gain enhanced access to features and sections of the site. Different accounts provide different levels of access and privileges depending on the user's role. This ensures convenience and safety when working with the site, allowing each user to use only the functionality they need."
 }
