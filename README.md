@@ -152,7 +152,9 @@ Clear.args = {
 ## CI pipeline и pre commit хуки
 
 Конфигурация github actions находится в /.github/workflows.
-В ci прогоняются все виды тестов, сборка проекта и сторибука, линтинг.
+В ci прогоняются все виды тестов, сборка проекта, линтинг.
+После прохождения тестов, формируется отчет для ghPages, доступный по адресу:
+[htmlReport](https://mspolermo.github.io/production-project/)
 
 В прекоммит хуках проверяем проект линтерами, конфиг в /.husky
 
@@ -191,27 +193,61 @@ Clear.args = {
 
 ## Сущности (entities)
 
-- [Article](/src/entities/Article)
-- [Comment](/src/entities/Comment)
-- [Counter](/src/entities/Counter)
-- [Country](/src/entities/Country)
-- [Currency](/src/entities/Currency)
-- [Notification](/src/entities/Notification)
-- [Profile](/src/entities/Profile)
-- [Rating](/src/entities/Rating)
-- [User](/src/entities/User)
+- [Article](/src/entities/Article/README.md)
+- [Comment](/src/entities/Comment/README.md)
+- [Counter](/src/entities/Counter/README.md)
+- [Country](/src/entities/Country/README.md)
+- [Currency](/src/entities/Currency/README.md)
+- [Notification](/src/entities/Notification/README.md)
+- [Profile](/src/entities/Profile/README.md)
+- [Rating](/src/entities/Rating/README.md)
+- [User](/src/entities/User/README.md)
 
 ## Фичи (features)
 
-- [addCommentForm](/src/features/addCommentForm)
-- [articleEditForm](/src/features/articleEditForm)
-- [articleRating](/src/features/articleRating)
-- [articleRecommendationsList](/src/features/articleRecommendationsList)
-- [AuthByUsername](/src/features/AuthByUsername)
-- [avatarDropdown](/src/features/avatarDropdown)
-- [editableProfileCard](/src/features/editableProfileCard)
-- [LangSwitcher](/src/features/LangSwitcher)
-- [notificationButton](/src/features/notificationButton)
+- [addCommentForm](/src/features/addCommentForm/README.md)
+- [articleEditForm](/src/features/articleEditForm/README.md)
+- [articlePageGreeting](/src//features/articlePageGreeting/README.md)
+- [articleRating](/src/features/articleRating/README.md)
+- [articleRecommendationsList](/src/features/articleRecommendationsList/README.md)
+- [ArticleSortSelector](/src/features/ArticleSortSelector/README.md)
+- [ArticleTypeTabs](/src/features/ArticleTypeTabs/README.md)
+- [ArticleViewSelector](/src/features/ArticleViewSelector/README.md)
+- [AuthByUsername](/src/features/AuthByUsername/README.md)
+- [avatarDropdown](/src/features/avatarDropdown/README.md)
+- [editableProfileCard](/src/features/editableProfileCard/README.md)
+- [LangSwitcher](/src/features/LangSwitcher/README.md)
+- [notificationButton](/src/features/notificationButton/README.md)
+- [scrollToTopButton](/src/features/scrollToTopButton/README.md)
 - [profileRating](/src/features/profileRating)
-- [ThemeSwitcher](/src/features/ThemeSwitcher)
-- [UI](/src/features/UI)
+- [ThemeSwitcher](/src/features/ThemeSwitcher/README.md)
+- [UI](/src/features/UI/README.md)
+- [uiDesignSwitcher](/src/features/uiDesignSwitcher/README.md)
+
+## Виджеты (widgets)
+
+- [ArticleAdditionalInfo](/src/widgets/ArticleAdditionalInfo/README.md)
+- [ArticlesFiltres](/src/widgets/ArticlesFilters/README.md)
+- [ErrorPage](/src/widgets/ErrorPage/)
+- [Navbar](/src/widgets/Navbar/README.md)
+- [Page](/src/widgets/Page/README.md)
+- [PageLoader](/src/widgets/PageLoader/README.md)
+- [ScrollToolbar](/src/widgets/ScrollToolbar/README.md)
+- [Sidebar](/src/widgets/Sidebar/README.md)
+
+## Страницы (pages)
+
+- [AboutPage](/src/pages/AboutPage/README.md)
+- [AdminPanelPage](/src/pages/AdminPanelPage/README.md)
+- [ArticleDetailsPage](/src/pages/ArticleDetailsPage/README.md)
+- [ArticleEditPage](/src/pages/ArticleEditPage/README.md)
+- [ArticlesPage](/src/pages/ArticlesPage/README.md)
+- [ForbiddenPage](/src/pages/ForbiddenPage/README.md)
+- [MainPage](/src/pages/MainPage/READMe.md)
+- [NotFoundPage](/src/pages/NotFoundPage/README.md)
+- [ProfilePage](/src/pages/ProfilePage/README.md)
+- [SettingsPage](/src/pages/SettingsPage/README.md)
+
+----
+
+## Дополнительная информация
