@@ -252,5 +252,7 @@ Clear.args = {
 
 ## Дополнительная информация
 
-Фронтенд задеплоен на Netlify: [link](https://fluffy-semifreddo-7d715d.netlify.app)
-Фейковый бэкенд задеплоен на Vercel: [link](https://production-project-server-fo5jn5h1d-mspolermos-projects.vercel.app/)
+Фронтенд задеплоен на [Netlify](https://fluffy-semifreddo-7d715d.netlify.app)
+
+Фейковый бэкенд задеплоен на [Vercel](https://production-project-server-fo5jn5h1d-mspolermos-projects.vercel.app/)
+
