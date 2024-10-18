@@ -1,4 +1,61 @@
-## Запуск проекта
+# 🎵 Articles Platform
+
+![React](https://img.shields.io/badge/React-18.2.0-blue) 
+![TypeScript](https://img.shields.io/badge/TypeScript-4.5.5-blue) 
+![Redux](https://img.shields.io/badge/Redux-1.9.0-orange) 
+![Webpack](https://img.shields.io/badge/Webpack-5.69.1-blue) 
+![Vite](https://img.shields.io/badge/Vite-3.1.0-blue) 
+![Storybook](https://img.shields.io/badge/Storybook-6.5.13-blue) 
+![Jest](https://img.shields.io/badge/Jest-27.5.1-red) 
+![Cypress](https://img.shields.io/badge/Cypress-11.2.0-green) 
+![i18next](https://img.shields.io/badge/i18next-21.9.0-blue) 
+![Axios](https://img.shields.io/badge/Axios-0.26.1-blue) 
+![Concurrently](https://img.shields.io/badge/Concurrently-7.0.0-blue) 
+![React Router](https://img.shields.io/badge/React%20Router%20Dom-6.2.1-blue) 
+![React Redux](https://img.shields.io/badge/React%20Redux-8.0.5-blue) 
+![React Device Detect](https://img.shields.io/badge/React%20Device%20Detect-2.2.2-blue) 
+![React Spring](https://img.shields.io/badge/React%20Spring-9.5.2-blue) 
+![Headless UI](https://img.shields.io/badge/Headless%20UI-1.6.6-blue)
+
+
+## 📖 О проекте
+**Music Platform** — это веб-приложение для просмотра и публикации статей, разработанное с помощью **React**, **Vite**, **Webpack**, **Redux** и прочих технолочий. Проект предоставляет собой удобный интерфейс для управления статьями, пользователями и пользовательскими данными. Включает в себе версию с 2 видами дизайна и различными темами оформления. Внедрена поддержка перевода интерфейса на русский и английский языки.
+
+<h4>Новый дизайн:</h4>
+<div style="display: flex; flex-wrap: wrap; gap: 16px;">
+  <a href="./public/screenshots/new/Main.png" target="_blank">
+    <img src="./public/screenshots/new/Main.png" alt="Главная страница" style="width: 240px; border-radius: 8px;" />
+  </a>
+  <a href="./public/screenshots/new/Articles.png" target="_blank">
+    <img src="./public/screenshots/new/Articles.png" alt="Список статей" style="width: 240px; border-radius: 8px;" />
+  </a>
+  <a href="./public/screenshots/new/Article-top.png" target="_blank">
+    <img src="./public/screenshots/new/Article-top.png" alt="Статья верх" style="width: 240px; border-radius: 8px;" />
+  </a>
+    <a href="./public/screenshots/new/Article-bottom.png" target="_blank">
+    <img src="./public/screenshots/new/Article-bottom.png" alt="Статья низ" style="width: 240px; border-radius: 8px;" />
+  </a>
+  <a href="./public/screenshots/new/Profile.png" target="_blank">
+    <img src="./public/screenshots/new/Profile.png" alt="Профиль пользователя" style="width: 240px; border-radius: 8px;" />
+  </a>
+</div>
+</hr>
+
+<h4>Старый дизайн:</h4>
+<div style="display: flex; flex-wrap: wrap; gap: 16px;">
+  <a href="./public/screenshots/old/Main.png" target="_blank">
+    <img src="./public/screenshots/old/Main.png" alt="Главная страница" style="width: 240px; border-radius: 8px;" />
+  </a>
+  <a href="./public/screenshots/old/Articles.png" target="_blank">
+    <img src="./public/screenshots/old/Articles.png" alt="Список статей" style="width: 240px; border-radius: 8px;" />
+  </a>
+  <a href="./public/screenshots/old/Profile.png" target="_blank">
+    <img src="./public/screenshots/old/Profile.png" alt="Профиль пользователя" style="width: 240px; border-radius: 8px;" />
+  </a>
+</div>
+
+
+## 📦 Запуск проекта
 
 ```
 npm install - устанавливаем зависимости
@@ -7,7 +64,7 @@ npm run start:dev или npm run start:dev:vite - запуск сервера + 
 
 ----
 
-## Скрипты
+## 🛠️ Скрипты
 
 - `npm run start` - Запуск frontend проекта на webpack dev server
 - `npm run start:vite` - Запуск frontend проекта на vite
@@ -34,7 +91,7 @@ npm run start:dev или npm run start:dev:vite - запуск сервера + 
 
 ----
 
-## Архитектура проекта
+## 🚀 Архитектура проекта
 
 Проект написан в соответствии с методологией Feature sliced design
 
@@ -42,7 +99,7 @@ npm run start:dev или npm run start:dev:vite - запуск сервера + 
 
 ----
 
-## Работа с переводами
+## ⌨️️ Работа с переводами
 
 В проекте используется библиотека i18next для работы с переводами.
 Файлы с переводами хранятся в public/locales.
@@ -53,7 +110,7 @@ npm run start:dev или npm run start:dev:vite - запуск сервера + 
 
 ----
 
-## Тесты
+## 🧪 Тесты
 
 В проекте используются 4 вида тестов:
 1) Обычные unit тесты на jest - `npm run test:unit`
@@ -65,7 +122,7 @@ npm run start:dev или npm run start:dev:vite - запуск сервера + 
 
 ----
 
-## Линтинг
+## 🧹 Линтинг
 
 В проекте используется eslint для проверки typescript кода и stylelint для проверки файлов со стилями.
 
@@ -84,7 +141,7 @@ npm run start:dev или npm run start:dev:vite - запуск сервера + 
 - `npm run lint:scss:fix` - Исправление scss файлов style линтером
 
 ----
-## Storybook
+## 📖 Storybook
 
 В проекте для каждого компонента описываются стори-кейсы.
 Запросы на сервер мокаются с помощью storybook-addon-mock.
@@ -131,7 +188,7 @@ Clear.args = {
 
 ----
 
-## Конфигурация проекта
+## 💻 Конфигурация проекта
 
 Для разработки проект содержит 2 конфига:
 1. Webpack - ./config/build
@@ -149,7 +206,7 @@ Clear.args = {
 
 ----
 
-## CI pipeline и pre commit хуки
+## ⏱️ CI pipeline и pre commit хуки
 
 Конфигурация github actions находится в /.github/workflows.
 В ci прогоняются все виды тестов, сборка проекта, линтинг.
@@ -160,7 +217,7 @@ Clear.args = {
 
 ----
 
-### Работа с данными
+### 🪪 Работа с данными
 
 Взаимодействие с данными осуществляется с помощью redux toolkit.
 По возможности переиспользуемые сущности необходимо нормализовать с помощью EntityAdapter
@@ -172,7 +229,7 @@ Clear.args = {
 
 ----
 
-### Работа с feature-flags
+### 🔧 Работа с feature-flags
 
 Разрешено использование feature flags только с помощью хелпера toggleFeatures
 
@@ -191,7 +248,7 @@ Clear.args = {
 
 ----
 
-## Сущности (entities)
+## 🔑 Сущности (entities)
 
 - [Article](/src/entities/Article/README.md)
 - [Comment](/src/entities/Comment/README.md)
@@ -203,7 +260,7 @@ Clear.args = {
 - [Rating](/src/entities/Rating/README.md)
 - [User](/src/entities/User/README.md)
 
-## Фичи (features)
+## 🛒 Фичи (features)
 
 - [addCommentForm](/src/features/addCommentForm/README.md)
 - [articleEditForm](/src/features/articleEditForm/README.md)
@@ -224,7 +281,7 @@ Clear.args = {
 - [UI](/src/features/UI/README.md)
 - [uiDesignSwitcher](/src/features/uiDesignSwitcher/README.md)
 
-## Виджеты (widgets)
+## 📂 Виджеты (widgets)
 
 - [ArticleAdditionalInfo](/src/widgets/ArticleAdditionalInfo/README.md)
 - [ArticlesFiltres](/src/widgets/ArticlesFilters/README.md)
@@ -235,7 +292,7 @@ Clear.args = {
 - [ScrollToolbar](/src/widgets/ScrollToolbar/README.md)
 - [Sidebar](/src/widgets/Sidebar/README.md)
 
-## Страницы (pages)
+## 🔖 Страницы (pages)
 
 - [AboutPage](/src/pages/AboutPage/README.md)
 - [AdminPanelPage](/src/pages/AdminPanelPage/README.md)
@@ -250,7 +307,7 @@ Clear.args = {
 
 ----
 
-## Дополнительная информация
+## 📎 Дополнительная информация
 
 Фронтенд задеплоен на [Netlify](https://fluffy-semifreddo-7d715d.netlify.app)
 
